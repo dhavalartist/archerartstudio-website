@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="3D Mascot Character Design case study by Archer Art Studio — concept development, 3D modeling, materials and production reference.">
+<title>3D Mascot Character Design — Archer Art Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet/styles.css">
+<style>
+/* MASCOT CASE STUDY — page-specific styles */
+.m-case {
+--blue:#2f5fff;
+--blue2:#6f8cff;
+--bg:#fff;
+--alt:#f5f8fb;
+--text:#111820;
+--muted:#69767e;
+--line:rgba(17,24,32,.10);
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--text)
+}
+.m-container {
+    width: min(1180px, calc(100% - 48px));
+    margin: auto;
+    position: relative;
+    z-index: 2
+}
+.m-hero {
+    position: relative;
+    min-height: clamp(720px, 88vh, 900px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+    background: radial-gradient(circle at 82% 42%, rgba(47,95,255,.13), transparent 31%), linear-gradient(135deg, #fff, #f8fafc 55%, #edf2ff)
+}
+.m-hero:after {
+    content: "";
+    position: absolute;
+    width: 760px;
+    height: 760px;
+    right: -300px;
+    bottom: -400px;
+    border: 1px solid rgba(47,95,255,.15);
+    border-radius: 50%;
+    box-shadow: 0 0 0 70px rgba(47,95,255,.025), 0 0 0 140px rgba(47,95,255,.015)
+}
+.m-hero-grid {
+    display: grid;
+grid-template-columns:.86fr 1.14fr;
+    gap: 70px;
+    align-items: center;
+    padding: 100px 0 72px
+}
+.m-back {
+    display: inline-flex;
+    margin-bottom: 30px;
+    color: #6b7780;
+    font: 700 12px/1 Manrope, sans-serif;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    text-decoration: none
+}
+.m-back:hover {
+    color: var(--blue)
+}
+.m-eyebrow {
+    margin: 0 0 17px;
+    color: var(--blue);
+    font: 800 12px/1.2 Manrope, sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase
+}
+.m-hero h1, .m-section h2, .m-quote h2 {
+    margin: 0;
+    font: 800 clamp(48px, 6.5vw, 92px)/.9 Manrope, sans-serif;
+    letter-spacing: -.06em
+}
+.m-hero h1 em, .m-section h2 em, .m-process-note h3 em, .m-turnaround-copy h3 em, .m-final h2 em, .m-quote h2 em, .m-cta h2 em {
+    color: var(--blue);
+    font-style: normal
+}
+.m-lead {
+    max-width: 590px;
+    margin: 28px 0 30px;
+    color: #59666e;
+    font: 400 18px/1.7 "DM Sans", sans-serif
+}
+.m-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin: 34px 0;
+    background: var(--line);
+    border: 1px solid var(--line)
+}
+.m-meta div {
+    padding: 17px 18px;
+    background: rgba(255,255,255,.8)
+}
+.m-meta b {
+    display: block;
+    margin-bottom: 7px;
+    color: #87939a;
+    font: 800 10px/1 Manrope, sans-serif;
+    letter-spacing: .13em;
+    text-transform: uppercase
+}
+.m-meta span {
+    color: #172129;
+    font: 600 13px/1.45 "DM Sans", sans-serif
+}
+.m-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 24px;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    background: var(--blue);
+    color: #fff;
+    font: 800 12px/1 Manrope, sans-serif;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 12px 28px rgba(47,95,255,.20);
+    transition: .22s ease
+}
+.m-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 17px 34px rgba(47,95,255,.27);
+    background: #2552e8
+}
+.m-hero-art {
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.m-hero-image {
+    width: min(700px, 100%);
+    height: 630px;
+    object-fit: contain;
+    object-position: center bottom;
+    filter: drop-shadow(0 28px 38px rgba(16,30,38,.17));
+    transition: transform .6s ease
+}
+.m-hero-image:hover {
+    transform: translateY(-7px) scale(1.01)
+}
+.m-orbit {
+    position: absolute;
+    border: 1px solid rgba(47,95,255,.17);
+    border-radius: 50%;
+    pointer-events: none
+}
+.m-orbit.a {
+    width: 470px;
+    height: 470px;
+    right: 8%;
+    top: 9%
+}
+.m-orbit.b {
+    width: 610px;
+    height: 610px;
+    right: -3%;
+    top: -2%;
+    border-color: rgba(47,95,255,.08)
+}
+.m-label {
+    position: absolute;
+    right: 1%;
+    top: 14%;
+    padding: 13px 15px;
+    border: 1px solid rgba(47,95,255,.28);
+    background: rgba(255,255,255,.82);
+    box-shadow: 0 16px 38px rgba(16,30,38,.10);
+    color: var(--blue);
+    font: 800 10px/1.45 Manrope, sans-serif;
+    letter-spacing: .12em;
+    transform: rotate(-7deg)
+}
+.m-label span {
+    color: #7c878e
+}
+.m-intro {
+    padding: 110px 0 100px
+}
+.m-intro-grid, .m-section-head, .m-process-grid, .m-feature-grid, .m-turnaround, .m-quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px
+}
+.m-intro h2, .m-section h2, .m-quote h2 {
+    font-size: clamp(38px, 4.3vw, 64px);
+    line-height: .98
+}
+.m-copy, .m-section-head>p, .m-turnaround-copy p, .m-quote-grid>div:last-child {
+    color: var(--muted);
+    font: 400 15px/1.8 "DM Sans", sans-serif
+}
+.m-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 80px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line)
+}
+.m-stat {
+    padding: 28px 20px;
+    border-right: 1px solid var(--line)
+}
+.m-stat:last-child {
+    border: 0
+}
+.m-stat strong {
+    display: block;
+    font: 800 25px/1 Manrope, sans-serif
+}
+.m-stat span {
+    display: block;
+    margin-top: 9px;
+    color: #7a878e;
+    font: 600 11px/1.4 "DM Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .08em
+}
+.m-section {
+    padding: 112px 0;
+    border-top: 1px solid var(--line)
+}
+.m-section-alt {
+    background: var(--alt)
+}
+.m-section-head {
+    align-items: end;
+    margin-bottom: 55px
+}
+.m-section-head>p {
+    margin: 0
+}
+.m-card, .m-board {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #fff;
+    box-shadow: 0 20px 60px rgba(21,36,47,.07)
+}
+.m-card img, .m-board img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+.m-board figcaption, .m-card figcaption {
+    padding: 15px 18px;
+    border-top: 1px solid var(--line);
+    color: #6f7b82;
+    font: 700 11px/1.4 Manrope, sans-serif;
+    letter-spacing: .05em;
+    text-transform: uppercase
+}
+.m-process-grid {
+grid-template-columns:1.35fr .65fr;
+    gap: 24px
+}
+.m-process-note {
+    padding: 34px;
+    border: 1px solid var(--line);
+    background: #fff;
+    box-shadow: 0 20px 60px rgba(21,36,47,.06)
+}
+.m-process-note h3 {
+    margin: 0 0 23px;
+    font: 800 30px/1.1 Manrope, sans-serif;
+    letter-spacing: -.035em
+}
+.m-process-note>p:not(.m-eyebrow) {
+    color: var(--muted);
+    font: 400 15px/1.8 "DM Sans", sans-serif
+}
+.m-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 28px
+}
+.m-tags span {
+    padding: 8px 10px;
+    border: 1px solid rgba(47,95,255,.18);
+    background: #f5f7ff;
+    color: #4e61a4;
+    font: 700 10px/1 Manrope, sans-serif;
+    text-transform: uppercase
+}
+.m-feature-grid {
+grid-template-columns:1.25fr .75fr;
+    gap: 24px
+}
+.m-detail-list {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-top: 1px solid var(--line)
+}
+.m-detail-list article {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 15px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line)
+}
+.m-detail-list article>span {
+    color: var(--blue);
+    font: 800 11px/1 Manrope, sans-serif
+}
+.m-detail-list h3 {
+    margin: 0 0 8px;
+    font: 800 17px/1.2 Manrope, sans-serif
+}
+.m-detail-list p {
+    margin: 0;
+    color: #707c83;
+    font: 400 13px/1.65 "DM Sans", sans-serif
+}
+.m-turnaround {
+grid-template-columns:.55fr 1.45fr;
+    gap: 36px
+}
+.m-turnaround-copy {
+    position: sticky;
+    top: 110px
+}
+.m-number {
+    margin-bottom: 18px;
+    color: var(--blue);
+    font: 800 12px/1 Manrope, sans-serif;
+    letter-spacing: .15em
+}
+.m-turnaround-copy h3 {
+    margin: 0 0 22px;
+    font: 800 36px/1.02 Manrope, sans-serif;
+    letter-spacing: -.04em
+}
+.m-turnaround-copy ul {
+    margin: 27px 0 0;
+    padding: 0;
+    list-style: none
+}
+.m-turnaround-copy li {
+    padding: 11px 0 11px 17px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    color: #45535b;
+    font: 700 11px/1.4 Manrope, sans-serif;
+    text-transform: uppercase
+}
+.m-turnaround-copy li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 17px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--blue)
+}
+.m-final {
+    position: relative;
+    min-height: 850px;
+    padding: 115px 0 60px;
+    overflow: hidden;
+    background: #080d10;
+    color: #fff
+}
+.m-final:before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: -250px;
+    top: -300px;
+    border: 1px solid rgba(111,140,255,.16);
+    border-radius: 50%
+}
+.m-final h2 {
+    margin: 0;
+    font: 800 clamp(44px, 5.5vw, 76px)/.95 Manrope, sans-serif;
+    letter-spacing: -.055em
+}
+.m-final-head {
+    max-width: 620px;
+    position: relative;
+    z-index: 3
+}
+.m-final-head>p:last-child {
+    max-width: 520px;
+    color: #a9b5ba;
+    font: 400 15px/1.75 "DM Sans", sans-serif
+}
+.m-final-art {
+    height: 650px;
+    margin: -10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative
+}
+.m-final-art img {
+    width: min(820px, 100%);
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    filter: drop-shadow(0 35px 50px rgba(0,0,0,.48));
+    transition: .7s ease
+}
+.m-final-art img:hover {
+    transform: translateY(-9px) scale(1.01)
+}
+.m-quote {
+    padding: 115px 0;
+    background: #11191d;
+    color: #fff
+}
+.m-quote h2 {
+    color: #f3f6f6
+}
+.m-quote-grid>div:last-child {
+    color: #b6c1c5
+}
+.m-cta {
+    padding: 120px 0;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(47,95,255,.12), transparent 35%), #f6f8fa
+}
+.m-cta h2 {
+    margin: 0;
+    font: 800 clamp(46px, 6vw, 82px)/.92 Manrope, sans-serif;
+    letter-spacing: -.06em
+}
+.m-cta>div>p:not(.m-eyebrow) {
+    max-width: 610px;
+    margin: 25px auto 30px;
+    color: #69767e;
+    font: 400 16px/1.75 "DM Sans", sans-serif
+}
+/* Dark mode */
+body.dark-mode .m-case {
+--bg:#0d1215;
+--alt:#11191d;
+--text:#f2f5f5;
+--line:rgba(255,255,255,.10);
+    background: var(--bg);
+    color: var(--text)
+}
+body.dark-mode .m-hero {
+    background: radial-gradient(circle at 82% 42%, rgba(111,140,255,.12), transparent 31%), linear-gradient(135deg, #11191d, #0d1215)
+}
+body.dark-mode .m-lead, body.dark-mode .m-copy, body.dark-mode .m-section-head>p, body.dark-mode .m-turnaround-copy p, body.dark-mode .m-quote-grid>div:last-child {
+    color: #b5c0c4
+}
+body.dark-mode .m-meta div, body.dark-mode .m-process-note, body.dark-mode .m-card, body.dark-mode .m-board {
+    background: #151d21;
+    border-color: #2d3a40
+}
+body.dark-mode .m-meta span, body.dark-mode .m-detail-list h3 {
+    color: #f0f4f5
+}
+body.dark-mode .m-label {
+    background: rgba(21,29,33,.88)
+}
+body.dark-mode .m-process-card figcaption, body.dark-mode .m-board figcaption, body.dark-mode .m-card figcaption {
+    background: #171f23;
+    color: #aeb9bd;
+    border-color: #2d3a40
+}
+body.dark-mode .m-tags span {
+    background: #151d21;
+    border-color: #344a78;
+    color: #8fa6ff
+}
+body.dark-mode .m-turnaround-copy li {
+    color: #d4dcdf
+}
+body.dark-mode .m-cta {
+    background: radial-gradient(circle at 50% 0%, rgba(111,140,255,.10), transparent 35%), #0d1215
+}
+body.dark-mode .m-cta>div>p:not(.m-eyebrow) {
+    color: #b5c0c4
+}
+
+@media(max-width:950px) {
+.m-hero-grid, .m-intro-grid, .m-section-head, .m-process-grid, .m-feature-grid, .m-turnaround, .m-quote-grid {
+    grid-template-columns: 1fr
+}
+.m-hero-grid {
+    gap: 30px
+}
+.m-hero-art {
+    min-height: 560px
+}
+.m-hero-image {
+    height: 560px
+}
+.m-section-head {
+    gap: 22px
+}
+.m-turnaround-copy {
+    position: static
+}
+}
+
+@media(max-width:700px) {
+.m-container {
+    width: min(100% - 32px, 1180px)
+}
+.m-hero-grid {
+    padding: 90px 0 55px
+}
+.m-hero h1 {
+    font-size: clamp(52px, 16vw, 82px)
+}
+.m-meta {
+    grid-template-columns: 1fr
+}
+.m-hero-art {
+    min-height: 420px
+}
+.m-hero-image {
+    height: 430px
+}
+.m-orbit.a {
+    width: 330px;
+    height: 330px
+}
+.m-orbit.b {
+    width: 420px;
+    height: 420px
+}
+.m-intro, .m-section, .m-quote, .m-cta {
+    padding: 80px 0
+}
+.m-stats {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 55px
+}
+.m-stat:nth-child(2) {
+    border-right: 0
+}
+.m-stat:nth-child(-n+2) {
+    border-bottom: 1px solid var(--line)
+}
+.m-final {
+    min-height: 650px;
+    padding: 80px 0 20px
+}
+.m-final-art {
+    height: 520px
+}
+}
+
+@media(max-width:480px) {
+.m-stats {
+    grid-template-columns: 1fr
+}
+.m-stat {
+    border-right: 0;
+    border-bottom: 1px solid var(--line)
+}
+.m-stat:last-child {
+    border-bottom: 0
+}
+.m-final-art {
+    height: 440px
+}
+}
+</style>
+</head>
+<body>
+<header class="aas-site-header">
+  <div class="aas-container aas-nav"><a class="aas-brand aas-logo-image" href="index.html" aria-label="Archer Art Studio home"><img class="aas-logo-light" src="images/archer-logo-transparent.png" alt="Archer Art Studio"><img class="aas-logo-dark" src="images/archer-logo-dark.png" alt="" aria-hidden="true"></a>
+    <button class="aas-menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="aas-menu"><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="index.html#work">Portfolio</a><a href="index.html#process">Process</a><a href="index.html#contact">Contact</a><a class="aas-nav-cta" href="index.html#contact">Start a Project</a></nav>
+  </div>
+</header>
+<main class="m-case">
+  <section class="m-hero">
+    <div class="m-container m-hero-grid">
+      <div><a class="m-back" href="index.html#work">← Back to Portfolio</a>
+        <p class="m-eyebrow">01 · CHARACTER DESIGN / 3D</p>
+        <h1>3D Mascot<br>
+          <em>Character.</em></h1>
+        <p class="m-lead">From an initial character idea to a polished 3D mascot, this project combines expressive design, clean modeling, PBR materials and production-ready presentation.</p>
+        <div class="m-meta">
+          <div><b>Project</b><span>Business Mascot Character</span></div>
+          <div><b>Role</b><span>Concept + 3D Character Art</span></div>
+          <div><b>Pipeline</b><span>Concept · Model · Texture · Presentation</span></div>
+        </div>
+        <a class="m-btn" href="#project-overview">Explore Case Study ↓</a></div>
+      <div class="m-hero-art">
+        <div class="m-orbit a"></div>
+        <div class="m-orbit b"></div>
+        <img class="m-hero-image" src="images/mascot_character/mascot-final-transparent.png" alt="3D business mascot character with green shirt, red tie, blue trousers and brown document bag">
+        <div class="m-label">3D CHARACTER<br>
+          <span>FINAL MODEL</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="m-intro" id="project-overview">
+    <div class="m-container">
+      <div class="m-intro-grid">
+        <div>
+          <p class="m-eyebrow">THE PROJECT</p>
+          <h2>A memorable mascot built from <em>concept to 3D.</em></h2>
+        </div>
+        <div class="m-copy">
+          <p>The goal was to create a friendly business-oriented mascot with a strong silhouette, readable facial features and enough personality to work across marketing, animation and interactive applications.</p>
+          <p>The final character combines a distinctive green shirt, red tie, blue trousers, glasses, moustache and document bag into a coherent visual identity that remains recognizable from multiple angles.</p>
+        </div>
+      </div>
+      <div class="m-stats">
+        <div class="m-stat"><strong>2D → 3D</strong><span>Design development</span></div>
+        <div class="m-stat"><strong>360°</strong><span>Character turnaround</span></div>
+        <div class="m-stat"><strong>PBR</strong><span>Material treatment</span></div>
+        <div class="m-stat"><strong>READY</strong><span>Animation / game use</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="m-section m-section-alt">
+    <div class="m-container">
+      <div class="m-section-head">
+        <div>
+          <p class="m-eyebrow">02 · CONCEPT DEVELOPMENT</p>
+          <h2>Idea → shape → <em>final character.</em></h2>
+        </div>
+        <p>The character was refined progressively so the personality of the original drawing remained visible after the transition into 3D.</p>
+      </div>
+      <div class="m-process-grid">
+        <figure class="m-card"><img src="images/mascot_character/mascot-concept-process.png" alt="Mascot concept development from rough sketch to cleanup and final design">
+          <figcaption>Concept development · rough exploration · cleanup · final direction</figcaption>
+        </figure>
+        <article class="m-process-note">
+          <p class="m-eyebrow">DESIGN INTENT</p>
+          <h3>Friendly enough for a brand.<br>
+            <em>Strong enough for a 3D asset.</em></h3>
+          <p>The design uses exaggerated facial proportions, a clear hairstyle, glasses and moustache, plus a simple color hierarchy that makes the character immediately readable.</p>
+          <div class="m-tags"><span>Expressive face</span><span>Clear silhouette</span><span>Business identity</span><span>Animation friendly</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="m-section">
+    <div class="m-container">
+      <div class="m-section-head">
+        <div>
+          <p class="m-eyebrow">03 · 3D MODELING REFERENCE</p>
+          <h2>Designed for <em>consistent modeling.</em></h2>
+        </div>
+        <p>Orthographic views, T-pose references and detail callouts establish the proportions and construction needed for a reliable 3D model.</p>
+      </div>
+      <figure class="m-board"><img src="images/mascot_character/mascot-reference-sheet.png" alt="3D mascot character reference sheet with T-pose, turnaround, closeups, prop and material references">
+        <figcaption>Character reference sheet · T-pose · turnaround · details · materials · prop</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="m-section m-section-alt">
+    <div class="m-container">
+      <div class="m-section-head">
+        <div>
+          <p class="m-eyebrow">04 · MODEL + MATERIALS</p>
+          <h2>Every detail supports the <em>character identity.</em></h2>
+        </div>
+        <p>The final asset is not only about the face. Clothing, accessories, materials and the document bag all reinforce the mascot's role.</p>
+      </div>
+      <div class="m-feature-grid">
+        <figure class="m-card"><img src="images/mascot_character/mascot-3d-showcase.png" alt="3D mascot character showcase with final model, views, expressions and wireframe">
+          <figcaption>Final 3D character showcase · expressions · closeups · wireframe</figcaption>
+        </figure>
+        <div class="m-detail-list">
+          <article><span>01</span>
+            <div>
+              <h3>Face & identity</h3>
+              <p>Glasses, moustache, expressive eyes and stylized hair create a recognizable face.</p>
+            </div>
+          </article>
+          <article><span>02</span>
+            <div>
+              <h3>Clothing</h3>
+              <p>Green shirt, red tie and blue trousers create a simple high-contrast color hierarchy.</p>
+            </div>
+          </article>
+          <article><span>03</span>
+            <div>
+              <h3>Accessories</h3>
+              <p>Pen, belt, polished shoes and the document bag add believable character context.</p>
+            </div>
+          </article>
+          <article><span>04</span>
+            <div>
+              <h3>Materials</h3>
+              <p>Soft cloth, leather, metal and skin materials keep the model visually separated and readable.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m-section">
+    <div class="m-container">
+      <div class="m-section-head">
+        <div>
+          <p class="m-eyebrow">05 · TURNAROUND / PRODUCTION</p>
+          <h2>Built from every angle, <em>not one render.</em></h2>
+        </div>
+        <p>Front, profile, back and top views make the character useful as a real production reference instead of a single showcase image.</p>
+      </div>
+      <div class="m-turnaround">
+        <div class="m-turnaround-copy">
+          <div class="m-number">05</div>
+          <h3>Production-ready<br>
+            <em>character reference.</em></h3>
+          <p>The turnaround establishes consistent proportions, clothing construction and accessory placement. The wireframe and material references also communicate the intended production quality.</p>
+          <ul>
+            <li>Front / profile / back consistency</li>
+            <li>T-pose modeling reference</li>
+            <li>Material and color callouts</li>
+            <li>Prop reference included</li>
+          </ul>
+        </div>
+        <figure class="m-board"><img src="images/mascot_character/mascot-turnaround.png" alt="Mascot character front profile back and top modeling turnaround">
+          <figcaption>Character turnaround · front · profile · back · top</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="m-final">
+    <div class="m-container">
+      <div class="m-final-head">
+        <p class="m-eyebrow">06 · FINAL PRESENTATION</p>
+        <h2>From concept character<br>
+          <em>to finished 3D mascot.</em></h2>
+        <p>A polished character presentation that communicates both personality and production capability.</p>
+      </div>
+      <figure class="m-final-art"><img src="images/mascot_character/mascot-final-transparent.png" alt="Final 3D business mascot character with document bag"></figure>
+    </div>
+  </section>
+  <section class="m-quote">
+    <div class="m-container m-quote-grid">
+      <div>
+        <p class="m-eyebrow">07 · THE TAKEAWAY</p>
+        <h2>A character designed to work <em>beyond a single image.</em></h2>
+      </div>
+      <div>
+        <p>The project demonstrates a complete character workflow: visual exploration, design refinement, 3D modeling, materials, reference documentation and final presentation.</p>
+        <p>That same workflow can be adapted for game characters, mascots, promotional characters, animation assets and branded 3D content.</p>
+      </div>
+    </div>
+  </section>
+  <section class="m-cta">
+    <div class="m-container">
+      <p class="m-eyebrow">HAVE A SIMILAR PROJECT?</p>
+      <h2>Need a character built<br>
+        from <em>concept to 3D?</em></h2>
+      <p>Let's create a character that is visually strong, production-ready and built for real use.</p>
+      <a class="m-btn" href="index.html#contact">Start a Project →</a></div>
+  </section>
+</main>
+<footer>
+  <div class="aas-container">© 2026 Archer Art Studio · Game Art · 3D · UI/UX · AR · Promotional Art</div>
+</footer>
+<div class="aas-style-toggle" id="aas-styletoggle" aria-label="Light and dark mode"><span class="aas-style-toggle-label aas-light-label">LIGHT</span>
+  <button type="button" class="aas-style-toggle-switch" aria-pressed="false" aria-label="Switch to dark mode"><span class="aas-style-toggle-knob"></span></button>
+  <span class="aas-style-toggle-label aas-dark-label">DARK</span></div>
+<script src="scripts/script.js"></script><script src="scripts/dark-mode.js"></script><script src="scripts/case-parallax.js"></script><script src="scripts/premium-parallax.js"></script>
+</body>
+</html>

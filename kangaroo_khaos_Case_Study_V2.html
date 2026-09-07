@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="google-site-verification" content="2LvWR_97yC-lxZfOxrT5Doq7GKf-lE_aii_0to8e03Y" />	
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Kangaroo Khaos case study by Archer Art Studio — character concept, sketching, 3D modeling, rigging, animation and game UI/UX.">
+<meta name="keywords" content="Kangaroo Khaos, 3D game art, character design, Blender, rigging, game UI UX, Archer Art Studio">
+<title>Kangaroo Khaos — 3D Game Art Case Study | Archer Art Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet/styles.css">
+<style>
+/* Kangaroo Khaos case-study redesign — intentionally follows the Archer homepage visual language. */
+.k-case {
+    overflow: hidden;
+    background: var(--aas-bg, #fff);
+    color: var(--aas-text, #111820)
+}
+.k-hero {
+    position: relative;
+    min-height: 720px;
+    padding: 118px 0 92px;
+    background: radial-gradient(circle at 82% 40%, rgba(47,99,255,.12), transparent 36%), linear-gradient(135deg, #fff 0%, #f7fafc 58%, #eef3ff 100%);
+    border-bottom: 1px solid rgba(17,24,32,.08)
+}
+.k-hero:after {
+    content: "";
+    position: absolute;
+    inset: auto -12% -220px auto;
+    width: 720px;
+    height: 720px;
+    border: 1px solid rgba(47,99,255,.15);
+    border-radius: 50%;
+    pointer-events: none
+}
+.k-container {
+    width: min(1180px, calc(100% - 48px));
+    margin: auto;
+    position: relative;
+    z-index: 2
+}
+.k-hero-grid {
+    display: grid;
+grid-template-columns:.9fr 1.1fr;
+    gap: 72px;
+    align-items: center
+}
+.k-back {
+    display: inline-flex;
+    gap: 8px;
+    color: #64717b;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    text-decoration: none;
+    margin-bottom: 32px
+}
+.k-back:hover {
+    color: #2f63ff
+}
+.k-eyebrow {
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #2f63ff;
+    font-weight: 800;
+    margin: 0 0 18px
+}
+.k-hero h1 {
+    font-family: Manrope, sans-serif;
+    font-size: clamp(58px, 7vw, 104px);
+    line-height: .88;
+    letter-spacing: -.065em;
+    margin: 0 0 30px;
+    font-weight: 800
+}
+.k-hero h1 em, .k-section h2 em {
+    font-style: normal;
+    color: #2f63ff
+}
+.k-lead {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #66737c;
+    max-width: 590px;
+    margin: 0 0 30px
+}
+.k-meta {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 26px;
+    margin: 30px 0 30px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(17,24,32,.1)
+}
+.k-meta b {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: #7c8790;
+    margin-bottom: 7px
+}
+.k-meta span {
+    font-size: 14px;
+    font-weight: 700
+}
+.k-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 7px;
+    background: #2f63ff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+    box-shadow: 0 12px 28px rgba(47,99,255,.18);
+    transition: .25s
+}
+.k-btn:hover {
+    transform: translateY(-2px)
+}
+.k-hero-art {
+    position: relative;
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.k-frame {
+    width: min(610px, 100%);
+    padding: 26px;
+    background: rgba(245,249,252,.92);
+    border: 1px solid #d7e0e5;
+    border-radius: 14px;
+    box-shadow: 0 30px 80px rgba(32,53,76,.15);
+    transform: rotate(1.2deg);
+    position: relative
+}
+.k-frame:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 24px;
+    height: 24px;
+    border-left: 1px solid #2f63ff;
+    border-top: 1px solid #2f63ff;
+    transform: translateX(-1px)
+}
+.k-frame img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    border-radius: 3px;
+    background: #30343a
+}
+.k-frame small {
+    display: block;
+    text-align: right;
+    margin-top: 14px;
+    font-size: 9px;
+    letter-spacing: .2em;
+    color: #7b858c;
+    font-weight: 800
+}
+.k-float-card {
+    position: absolute;
+    right: -8px;
+    top: 38px;
+    width: 70px;
+    height: 54px;
+    border: 1px solid rgba(47,99,255,.28);
+    border-radius: 7px;
+    background: rgba(255,255,255,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2f63ff;
+    font-size: 10px;
+    font-weight: 800;
+    box-shadow: 0 14px 35px rgba(47,99,255,.1);
+    transform: rotate(-8deg)
+}
+.k-float-dot {
+    position: absolute;
+    right: 62px;
+    top: 30px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #2f63ff;
+    box-shadow: 0 0 0 8px rgba(47,99,255,.1)
+}
+.k-orbit {
+    position: absolute;
+    width: 610px;
+    height: 610px;
+    border: 1px solid rgba(47,99,255,.12);
+    border-radius: 50%
+}
+.k-intro {
+    padding: 80px 0 74px;
+    background: #fff
+}
+.k-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start
+}
+.k-intro h2, .k-section h2 {
+    font-family: Manrope, sans-serif;
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1.02;
+    letter-spacing: -.05em;
+    margin: 0
+}
+.k-copy {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #68757d;
+    margin: 0;
+    max-width: 620px
+}
+.k-copy+.k-copy {
+    margin-top: 18px
+}
+.k-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    margin-top: 56px;
+    background: #e3e9ed;
+    border: 1px solid #e3e9ed
+}
+.k-stat {
+    padding: 26px;
+    background: #fff
+}
+.k-stat strong {
+    font-family: Manrope;
+    font-size: 27px
+}
+.k-stat span {
+    display: block;
+    margin-top: 5px;
+    color: #7b858d;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em
+}
+.k-section {
+    padding: 104px 0;
+    background: #f7f9fb
+}
+.k-section.alt {
+    background: #fff
+}
+.k-section-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: end;
+    margin-bottom: 48px
+}
+.k-section-head p {
+    color: #68757d;
+    line-height: 1.75;
+    margin: 0;
+    font-size: 16px
+}
+.k-development {
+    display: grid;
+grid-template-columns:1.08fr .92fr;
+    gap: 22px;
+    align-items: start
+}
+.k-development-left {
+    display: grid;
+    gap: 22px;
+    align-self: start
+}
+.k-development>.k-image-card {
+    align-self: start
+}
+.k-stack {
+    align-self: start
+}
+.k-image-card {
+    background: #fff;
+    border: 1px solid #dde5ea;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(20,35,48,.07)
+}
+.k-concept-card {
+    padding-top: 28px
+}
+.k-concept-card img {
+    display: block
+}
+.k-design-notes {
+    padding: 30px 30px 28px;
+    background: linear-gradient(135deg, #111820 0%, #182331 100%);
+    border: 1px solid #263442;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 18px 50px rgba(20,35,48,.12)
+}
+.k-design-notes h3 {
+    font-family: Manrope, sans-serif;
+    font-size: clamp(24px, 2.4vw, 34px);
+    line-height: 1.08;
+    letter-spacing: -.04em;
+    margin: 0
+}
+.k-design-notes h3 em {
+    font-style: normal;
+    color: #6d8fff
+}
+.k-design-notes>p:not(.k-eyebrow) {
+    margin: 18px 0 22px;
+    color: #b9c4cc;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 560px
+}
+.k-note-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+.k-note-tags span {
+    padding: 8px 11px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px;
+    color: #dbe4ea;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,.04)
+}
+.k-image-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: zoom-in
+}
+.k-image-card figcaption {
+    padding: 16px 18px;
+    color: #68757d;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 800
+}
+.k-stack {
+    display: grid;
+    gap: 22px
+}
+.k-stack .k-image-card img {
+    aspect-ratio: 1.55;
+    object-fit: cover
+}
+.k-pipeline {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px
+}
+.k-step {
+    padding: 26px;
+    background: #fff;
+    border: 1px solid #e0e7eb;
+    border-radius: 10px;
+    min-height: 190px
+}
+.k-step b {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: #eef3ff;
+    color: #2f63ff;
+    font-size: 12px
+}
+.k-step h3 {
+    font-family: Manrope;
+    margin: 28px 0 9px;
+    font-size: 18px
+}
+.k-step p {
+    margin: 0;
+    color: #718089;
+    line-height: 1.6;
+    font-size: 13px
+}
+.k-ui-intro {
+    max-width: 760px;
+    margin-bottom: 48px
+}
+.k-ui-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px
+}
+.k-ui-card {
+    background: #fff;
+    border: 1px solid #dde5ea;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(20,35,48,.06);
+    cursor: zoom-in
+}
+.k-ui-card img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    object-position: top
+}
+.k-ui-card figcaption {
+    padding: 14px 15px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #64717b
+}
+.k-quote {
+    padding: 92px 0;
+    background: #111820;
+    color: #fff
+}
+.k-quote-grid {
+    display: grid;
+grid-template-columns:1.1fr .9fr;
+    gap: 80px;
+    align-items: end
+}
+.k-quote h2 {
+    font-family: Manrope;
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1.02;
+    letter-spacing: -.05em;
+    margin: 0
+}
+.k-quote h2 em {
+    font-style: normal;
+    color: #6d8fff
+}
+.k-quote p {
+    color: #aab4bc;
+    line-height: 1.8;
+    font-size: 16px
+}
+.k-quote .k-btn {
+    margin-top: 12px
+}
+.k-cta {
+    padding: 100px 0;
+    background: radial-gradient(circle at 75% 35%, rgba(47,99,255,.12), transparent 35%), #f6f8fa
+}
+.k-cta-inner {
+    max-width: 850px
+}
+.k-cta h2 {
+    font-family: Manrope;
+    font-size: clamp(42px, 5vw, 70px);
+    line-height: 1;
+    letter-spacing: -.055em;
+    margin: 0 0 20px
+}
+.k-cta p {
+    color: #69767e;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 650px
+}
+.k-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(5,9,14,.88);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 30px
+}
+.k-lightbox.open {
+    display: flex
+}
+.k-lightbox img {
+    max-width: min(1100px, 94vw);
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px
+}
+.k-close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.3);
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer
+}
+
+@media(max-width:900px) {
+.k-hero {
+    padding: 95px 0 70px
+}
+.k-hero-grid, .k-intro-grid, .k-section-head, .k-development, .k-quote-grid {
+    grid-template-columns: 1fr;
+    gap: 42px
+}
+.k-hero-art {
+    min-height: 400px
+}
+.k-development-left {
+    gap: 18px
+}
+.k-meta {
+    grid-template-columns: 1fr 1fr
+}
+.k-stats {
+    grid-template-columns: 1fr 1fr
+}
+.k-pipeline {
+    grid-template-columns: 1fr 1fr
+}
+.k-ui-grid {
+    grid-template-columns: repeat(2, 1fr)
+}
+.k-ui-card img {
+    height: 480px
+}
+.k-orbit {
+    width: 480px;
+    height: 480px
+}
+}
+
+@media(max-width:560px) {
+.k-container {
+    width: min(100% - 30px, 1180px)
+}
+.k-hero h1 {
+    font-size: 56px
+}
+.k-lead {
+    font-size: 16px
+}
+.k-meta {
+    grid-template-columns: 1fr
+}
+.k-stats, .k-pipeline, .k-ui-grid {
+    grid-template-columns: 1fr
+}
+.k-ui-card img {
+    height: auto;
+    max-height: none
+}
+.k-frame {
+    padding: 12px
+}
+.k-float-card, .k-float-dot {
+    display: none
+}
+.k-section, .k-intro {
+    padding: 70px 0
+}
+.k-orbit {
+    width: 360px;
+    height: 360px
+}
+.k-hero-art {
+    min-height: 310px
+}
+}
+body.dark-mode .k-case {
+    background: #0b0f14;
+    color: #eef3f7
+}
+body.dark-mode .k-hero {
+    background: radial-gradient(circle at 82% 40%, rgba(47,99,255,.2), transparent 36%), linear-gradient(135deg, #0c1117, #111821)
+}
+body.dark-mode .k-intro, .dark-mode .k-section.alt {
+    background: #0b0f14
+}
+.dark-mode .k-section {
+    background: #10161d
+}
+.dark-mode .k-meta {
+    border-color: rgba(255,255,255,.1)
+}
+.dark-mode .k-stat, .dark-mode .k-image-card, .dark-mode .k-step, .dark-mode .k-ui-card {
+    background: #121920;
+    border-color: #27313a
+}
+.dark-mode .k-copy, .dark-mode .k-section-head p, .dark-mode .k-stat span, .dark-mode .k-step p, .dark-mode .k-ui-card figcaption {
+    color: #9da9b2
+}
+.dark-mode .k-frame {
+    background: #151c23;
+    border-color: #2b3740
+}
+.dark-mode .k-hero:after {
+    border-color: rgba(92,133,255,.15)
+}
+/* V12.1 — Match Kangaroo CTA/footer treatment with the other case-study pages. */
+.k-cta {
+    background: #10181b!important;
+    color: #fff;
+}
+.k-cta h2 {
+    color: #fff
+}
+.k-cta p {
+    color: #aab4bc
+}
+.k-cta .k-eyebrow {
+    color: #6d8fff
+}
+body.dark-mode .k-cta {
+    background: #10181b!important;
+}
+body.dark-mode .k-cta p {
+    color: #aab4bc
+}
+.k-cta + footer {
+    background: #080d0f!important;
+    color: #dbe5e5;
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+
+/* STEP 4B-1 — Kangaroo Khaos case-study polish
+   Visual hierarchy only. Existing Archer structure, colors and content remain intact. */
+.k-case .k-hero{
+    min-height:760px;
+    padding:128px 0 108px;
+}
+.k-case .k-hero-grid{
+    grid-template-columns:.86fr 1.14fr;
+    gap:82px;
+}
+.k-case .k-hero-art{
+    min-height:590px;
+}
+.k-case .k-frame{
+    width:min(680px,100%);
+    padding:28px;
+    transform:rotate(.8deg);
+    box-shadow:0 34px 90px rgba(32,53,76,.18);
+}
+.k-case .k-frame img{
+    aspect-ratio:16/10;
+}
+.k-case .k-hero-art:before{
+    content:"";
+    position:absolute;
+    width:76%;
+    height:76%;
+    border:1px solid rgba(47,99,255,.10);
+    border-radius:50%;
+}
+.k-case .k-float-card{
+    right:-2px;
+    top:48px;
+    width:82px;
+    height:58px;
+}
+.k-case .k-float-dot{
+    right:74px;
+    top:38px;
+}
+.k-case .k-intro{
+    padding:108px 0 92px;
+}
+.k-case .k-stats{
+    margin-top:68px;
+}
+.k-case .k-stat{
+    padding:30px 28px;
+}
+.k-case .k-section{
+    padding:116px 0;
+}
+.k-case .k-section-head{
+    margin-bottom:58px;
+}
+.k-case .k-section-head > div{
+    position:relative;
+}
+.k-case .k-section-head > div:after{
+    content:"";
+    display:block;
+    width:54px;
+    height:2px;
+    margin-top:24px;
+    background:#2f63ff;
+}
+.k-case .k-development{
+    gap:28px;
+}
+.k-case .k-development-left{
+    gap:28px;
+}
+.k-case .k-stack{
+    gap:28px;
+}
+.k-case .k-image-card{
+    border-radius:14px;
+    box-shadow:0 22px 60px rgba(20,35,48,.09);
+}
+.k-case .k-concept-card{
+    padding-top:34px;
+}
+.k-case .k-design-notes{
+    padding:34px 34px 32px;
+    border-radius:14px;
+}
+.k-case .k-image-card figcaption,
+.k-case .k-ui-card figcaption{
+    padding:17px 19px;
+}
+.k-case .k-section.alt .k-image-card{
+    overflow:hidden;
+}
+.k-case .k-section.alt .k-image-card img{
+    transition:transform .5s ease;
+}
+.k-case .k-section.alt .k-image-card:hover img{
+    transform:scale(1.012);
+}
+.k-case .k-pipeline{
+    gap:16px;
+    position:relative;
+}
+.k-case .k-step{
+    min-height:205px;
+    padding:28px;
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.k-case .k-step:hover{
+    transform:translateY(-5px);
+    border-color:#cbd8ff;
+    box-shadow:0 18px 45px rgba(32,53,76,.09);
+}
+.k-case .k-step b{
+    position:relative;
+    z-index:1;
+}
+.k-case .k-step h3{
+    margin-top:30px;
+}
+.k-case .k-ui-intro{
+    margin-bottom:54px;
+}
+.k-case .k-ui-grid{
+    gap:20px;
+}
+.k-case .k-ui-card{
+    border-radius:12px;
+    box-shadow:0 16px 42px rgba(20,35,48,.07);
+    transition:transform .25s ease, box-shadow .25s ease;
+}
+.k-case .k-ui-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 22px 52px rgba(20,35,48,.11);
+}
+.k-case .k-ui-card img{
+    transition:transform .45s ease;
+}
+.k-case .k-ui-card:hover img{
+    transform:scale(1.018);
+}
+.k-case .k-quote{
+    padding:112px 0;
+}
+.k-case .k-quote-grid{
+    gap:96px;
+}
+.k-case .k-cta{
+    padding:118px 0;
+}
+.k-case .k-cta-inner{
+    max-width:900px;
+}
+.k-case .k-btn{
+    min-height:50px;
+    padding:0 24px;
+}
+@media(max-width:900px){
+    .k-case .k-hero{
+        min-height:auto;
+        padding:105px 0 78px;
+    }
+    .k-case .k-hero-grid{
+        gap:52px;
+    }
+    .k-case .k-hero-art{
+        min-height:460px;
+    }
+    .k-case .k-intro{
+        padding:82px 0 72px;
+    }
+    .k-case .k-section{
+        padding:88px 0;
+    }
+    .k-case .k-section-head{
+        margin-bottom:42px;
+    }
+    .k-case .k-quote{
+        padding:88px 0;
+    }
+    .k-case .k-cta{
+        padding:88px 0;
+    }
+}
+@media(max-width:560px){
+    .k-case .k-hero{
+        padding:88px 0 64px;
+    }
+    .k-case .k-hero-art{
+        min-height:320px;
+    }
+    .k-case .k-frame{
+        padding:12px;
+    }
+    .k-case .k-section-head{
+        margin-bottom:34px;
+    }
+    .k-case .k-section-head > div:after{
+        margin-top:18px;
+    }
+    .k-case .k-step{
+        min-height:auto;
+    }
+}
+body.dark-mode .k-case .k-hero-art:before{
+    border-color:rgba(92,133,255,.12);
+}
+body.dark-mode .k-case .k-step:hover{
+    border-color:#334b82;
+    box-shadow:0 18px 45px rgba(0,0,0,.25);
+}
+
+/* STEP 4B-1A — Full-bleed Kangaroo Khaos hero
+   Replaces the framed-image hero with a presentation-style project opener. */
+.k-case .k-hero-fullbleed{
+    min-height:780px;
+    padding:0;
+    position:relative;
+    display:flex;
+    align-items:stretch;
+    overflow:hidden;
+    background:#0b0f14;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+.k-case .k-hero-bg{
+    position:absolute;
+    inset:0;
+    background-image:url("images/kangaroo_khaos/Kangaroo_Khaos.png");
+    background-size:cover;
+    background-position:center center;
+    transform:scale(1.015);
+}
+.k-case .k-hero-shade{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,rgba(6,10,14,.94) 0%,rgba(6,10,14,.78) 28%,rgba(6,10,14,.20) 58%,rgba(6,10,14,.08) 100%),linear-gradient(0deg,rgba(6,10,14,.38),transparent 38%);
+}
+.k-case .k-hero-overlay{
+    min-height:780px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    padding-top:126px;
+    padding-bottom:72px;
+    z-index:2;
+}
+.k-case .k-hero-overlay .k-back{
+    width:max-content;
+    color:rgba(255,255,255,.72);
+    margin-bottom:auto;
+}
+.k-case .k-hero-overlay .k-back:hover{color:#fff}
+.k-case .k-hero-copy{
+    width:min(620px,54%);
+    margin-top:42px;
+}
+.k-case .k-hero-copy .k-eyebrow{color:#7d9cff}
+.k-case .k-hero-copy h1{
+    color:#fff;
+    font-size:clamp(64px,8vw,118px);
+    margin-bottom:28px;
+    text-shadow:0 10px 35px rgba(0,0,0,.28);
+}
+.k-case .k-hero-copy .k-lead{
+    color:rgba(255,255,255,.84);
+    max-width:570px;
+    font-size:18px;
+}
+.k-case .k-about-panel{
+    position:absolute;
+    right:0;
+    bottom:74px;
+    width:min(500px,43%);
+    padding:30px 34px;
+    background:rgba(10,16,22,.72);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:16px;
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    box-shadow:0 28px 80px rgba(0,0,0,.25);
+}
+.k-case .k-about-label{
+    margin:0 0 14px;
+    font-family:Manrope,sans-serif;
+    font-size:30px;
+    line-height:1.05;
+    color:#fff;
+    font-weight:700;
+}
+.k-case .k-about-label em{font-style:normal;color:#6d8fff}
+.k-case .k-about-panel>p:not(.k-about-label){
+    margin:0;
+    color:rgba(255,255,255,.82);
+    line-height:1.65;
+    font-size:15px;
+}
+.k-case .k-about-panel .k-meta{
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin:22px 0 0;
+    padding-top:18px;
+    border-top:1px solid rgba(255,255,255,.16);
+}
+.k-case .k-about-panel .k-meta b{color:rgba(255,255,255,.5);font-size:9px}
+.k-case .k-about-panel .k-meta span{color:#fff;font-size:12px}
+.k-case .k-scroll-cue{
+    position:absolute;
+    left:0;
+    bottom:74px;
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#2f63ff;
+    color:#fff;
+    font-size:26px;
+    box-shadow:0 14px 30px rgba(47,99,255,.28);
+}
+/* Remove old hero-only decorative elements from the previous version. */
+.k-case .k-hero-fullbleed .k-orbit,
+.k-case .k-hero-fullbleed .k-float-card,
+.k-case .k-hero-fullbleed .k-float-dot,
+.k-case .k-hero-fullbleed .k-hero-art{display:none}
+@media(max-width:900px){
+    .k-case .k-hero-fullbleed{min-height:720px}
+    .k-case .k-hero-overlay{min-height:720px;padding-top:104px;padding-bottom:54px}
+    .k-case .k-hero-copy{width:min(650px,70%);margin-top:30px}
+    .k-case .k-about-panel{right:24px;bottom:54px;width:min(460px,50%)}
+    .k-case .k-scroll-cue{left:24px;bottom:54px}
+}
+@media(max-width:560px){
+    .k-case .k-hero-fullbleed{min-height:760px;align-items:flex-start}
+    .k-case .k-hero-bg{background-position:62% center}
+    .k-case .k-hero-shade{background:linear-gradient(180deg,rgba(6,10,14,.92) 0%,rgba(6,10,14,.70) 38%,rgba(6,10,14,.25) 68%,rgba(6,10,14,.72) 100%)}
+    .k-case .k-hero-overlay{min-height:760px;padding-top:92px;padding-bottom:34px}
+    .k-case .k-hero-copy{width:100%;margin-top:24px}
+    .k-case .k-hero-copy h1{font-size:64px}
+    .k-case .k-hero-copy .k-lead{font-size:15px;line-height:1.6}
+    .k-case .k-about-panel{left:0;right:0;bottom:32px;width:auto;padding:22px;border-radius:12px}
+    .k-case .k-about-label{font-size:26px}
+    .k-case .k-about-panel .k-meta{grid-template-columns:1fr 1fr 1fr;gap:10px}
+    .k-case .k-about-panel .k-meta span{font-size:10px}
+    .k-case .k-scroll-cue{display:none}
+}
+</style>
+<link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png?v=2">
+<link rel="shortcut icon" href="images/favicon.ico?v=2">
+<link rel="apple-touch-icon" href="images/favicon.png?v=2">
+<link rel="canonical" href="https://archerartstudio.com/kangaroo-khaos.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kangaroo Khaos — 3D Game Art & UI/UX Case Study | Archer Art Studio">
+<meta property="og:description" content="Explore the Kangaroo Khaos game art case study by Archer Art Studio, covering character concept design, 3D modeling, rigging, animation, game UI/UX and production assets.">
+<meta property="og:url" content="https://archerartstudio.com/kangaroo-khaos.html">
+<meta property="og:site_name" content="Archer Art Studio">
+<meta property="og:image" content="https://archerartstudio.com/images/og-archer-art-studio.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kangaroo Khaos — 3D Game Art & UI/UX Case Study | Archer Art Studio">
+<meta name="twitter:description" content="Explore the Kangaroo Khaos game art case study by Archer Art Studio, covering character concept design, 3D modeling, rigging, animation, game UI/UX and production assets.">
+<meta name="twitter:image" content="https://archerartstudio.com/images/og-archer-art-studio.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Kangaroo Khaos \u2014 3D Game Art & UI/UX Case Study",
+  "url": "https://archerartstudio.com/kangaroo-khaos.html",
+  "creator": {
+    "@id": "https://archerartstudio.com/#organization"
+  },
+  "publisher": {
+    "@id": "https://archerartstudio.com/#organization"
+  },
+  "description": "Explore the Kangaroo Khaos game art case study by Archer Art Studio, covering character concept design, 3D modeling, rigging, animation, game UI/UX and production assets."
+}
+  </script>
+</head>
+<body>
+<header class="aas-site-header">
+  <div class="aas-container aas-nav"><a class="aas-brand aas-logo-image" href="index.html" aria-label="Archer Art Studio home"><img class="aas-logo-light" src="images/archer-logo-transparent.png" alt="Archer Art Studio" loading="eager" decoding="async"><img class="aas-logo-dark" src="images/archer-logo-dark.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></a>
+    <button class="aas-menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="aas-menu"><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="index.html#work">Portfolio</a><a href="index.html#process">Process</a><a href="index.html#contact">Contact</a><a class="aas-nav-cta" href="index.html#contact">Start a Project</a></nav>
+  </div>
+</header>
+<main class="k-case">
+  <section class="k-hero k-hero-fullbleed">
+    <div class="k-hero-bg" aria-hidden="true"></div>
+    <div class="k-hero-shade" aria-hidden="true"></div>
+    <div class="k-container k-hero-overlay">
+      <a class="k-back" href="index.html#work">← Back to Portfolio</a>
+      <div class="k-hero-copy">
+        <p class="k-eyebrow">01 · 3D GAME ART</p>
+        <h1>Kangaroo<br><em>Khaos.</em></h1>
+        <p class="k-lead">A stylized endless-runner project where Archer Art Studio took the character from early concept sketches through 3D modeling, rigging, animation and game UI.</p>
+        <a class="k-btn" href="#project-overview">Explore Case Study ↓</a>
+      </div>
+      <div class="k-about-panel">
+        <p class="k-about-label">About <em>project</em></p>
+        <p>From concept development to a production-ready game character, Archer Art Studio handled the visual pipeline across character design, 3D modeling, rigging, animation and UI/UX.</p>
+        <div class="k-meta">
+          <div><b>Project</b><span>Kangaroo Khaos</span></div>
+          <div><b>Role</b><span>Art Production</span></div>
+          <div><b>Pipeline</b><span>Concept · 3D · Rig · UI</span></div>
+        </div>
+      </div>
+      <div class="k-scroll-cue" aria-hidden="true">↓</div>
+    </div>
+  </section>
+  <section class="k-intro" id="project-overview">
+    <div class="k-container">
+      <div class="k-intro-grid">
+        <div>
+          <p class="k-eyebrow">THE PROJECT</p>
+          <h2>From a rough sketch to a <em>game-ready character.</em></h2>
+        </div>
+        <div>
+          <p class="k-copy">Kangaroo Khaos is a stylized 3D endless-runner concept built around a memorable kangaroo protagonist. The work spans visual development and production rather than stopping at a single final render.</p>
+          <p class="k-copy">The case study shows how Archer can move between concept art, 3D production, technical setup and interface design while keeping one visual direction consistent.</p>
+        </div>
+      </div>
+      <div class="k-stats">
+        <div class="k-stat"><strong>19+</strong><span>Years experience</span></div>
+        <div class="k-stat"><strong>5</strong><span>Core art stages</span></div>
+        <div class="k-stat"><strong>20</strong><span>UI screens explored</span></div>
+        <div class="k-stat"><strong>2D + 3D</strong><span>Production workflow</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="k-section">
+    <div class="k-container">
+      <div class="k-section-head">
+        <div>
+          <p class="k-eyebrow">02 · CHARACTER DEVELOPMENT</p>
+          <h2>Sketch. Shape. <em>Build.</em></h2>
+        </div>
+        <p>The character evolved through hand-drawn exploration, color development, 3D modeling and technical rigging. Each stage adds information while keeping the personality intact.</p>
+      </div>
+      <div class="k-development">
+        <div class="k-development-left">
+          <figure class="k-image-card k-concept-card"><img src="images/kangaroo_khaos/character-concept-sketch-user.jpeg" alt="Kangaroo Khaos character concept front and side sketches" loading="lazy" decoding="async">
+            <figcaption>Character concept · front + side exploration</figcaption>
+          </figure>
+          <article class="k-design-notes">
+            <div>
+              <p class="k-eyebrow">DESIGN DIRECTION</p>
+              <h3>Personality first. <em>Production ready.</em></h3>
+            </div>
+            <p>Every decision was made to keep the kangaroo expressive, readable and easy to animate in a fast-moving game environment.</p>
+            <div class="k-note-tags"><span>Expressive silhouette</span><span>Sporty proportions</span><span>Clear shapes</span><span>Animation ready</span></div>
+          </article>
+        </div>
+        <div class="k-stack">
+          <figure class="k-image-card"><img src="images/kangaroo_khaos/character-concept-color-user.jpeg" alt="Kangaroo Khaos character concept and base color version" loading="lazy" decoding="async">
+            <figcaption>Concept direction + base color</figcaption>
+          </figure>
+          <figure class="k-image-card"><img src="images/kangaroo_khaos/character-turnaround-user.png" alt="Kangaroo Khaos three-quarter, front and back character views" loading="lazy" decoding="async">
+            <figcaption>3D turnaround + final form</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="k-section alt">
+    <div class="k-container">
+      <div class="k-section-head">
+        <div>
+          <p class="k-eyebrow">03 · 3D PRODUCTION</p>
+          <h2>Built for movement, <em>not just presentation.</em></h2>
+        </div>
+        <p>The Blender setup shows the character being prepared for controlled movement. Rigging, deformation and multiple viewpoints are part of the production story.</p>
+      </div>
+      <figure class="k-image-card"><img src="images/kangaroo_khaos/character-rigging-user.png" alt="Kangaroo Khaos character rig in Blender from front and side views" loading="lazy" decoding="async">
+        <figcaption>Rigging setup · front and side technical views</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="k-section">
+    <div class="k-container">
+      <div class="k-section-head">
+        <div>
+          <p class="k-eyebrow">04 · ART PIPELINE</p>
+          <h2>One character. <em>One connected pipeline.</em></h2>
+        </div>
+        <p>The value is in the continuity: visual decisions made during concept development carry through into the 3D model, rig and final interactive presentation.</p>
+      </div>
+      <div class="k-pipeline">
+        <article class="k-step"><b>01</b>
+          <h3>Concept</h3>
+          <p>Explore silhouette, attitude, proportions and visual identity.</p>
+        </article>
+        <article class="k-step"><b>02</b>
+          <h3>Sketch</h3>
+          <p>Resolve front and side views before committing to production.</p>
+        </article>
+        <article class="k-step"><b>03</b>
+          <h3>3D Model</h3>
+          <p>Translate the approved direction into a polished character.</p>
+        </article>
+        <article class="k-step"><b>04</b>
+          <h3>Rigging</h3>
+          <p>Prepare the character for animation and gameplay movement.</p>
+        </article>
+        <article class="k-step"><b>05</b>
+          <h3>UI / Game</h3>
+          <p>Extend the same art direction into the player experience.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="k-section alt">
+    <div class="k-container">
+      <div class="k-section-head">
+        <div>
+          <p class="k-eyebrow">05 · GAME UI / UX</p>
+          <h2>A complete game world needs <em>more than a character.</em></h2>
+        </div>
+        <p>Alongside the character work, the project explored menus, HUD, customization, shop, rewards, leaderboard, settings and retention screens.</p>
+      </div>
+      <div class="k-ui-grid">
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-main-menu.jpg" alt="Kangaroo Khaos main menu" loading="lazy" decoding="async">
+          <figcaption>main menu</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-gameplay-menu.jpg" alt="Kangaroo Khaos gameplay menu" loading="lazy" decoding="async">
+          <figcaption>gameplay menu</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-gameplay-hud.jpg" alt="Kangaroo Khaos gameplay HUD" loading="lazy" decoding="async">
+          <figcaption>gameplay HUD</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-character-categories.jpg" alt="Kangaroo Khaos character categories" loading="lazy" decoding="async">
+          <figcaption>character categories</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-hats.jpg" alt="Kangaroo Khaos hats customization" loading="lazy" decoding="async">
+          <figcaption>hats customization</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-shop.jpg" alt="Kangaroo Khaos shop" loading="lazy" decoding="async">
+          <figcaption>shop</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-coins-store.jpg" alt="Kangaroo Khaos coins store" loading="lazy" decoding="async">
+          <figcaption>coins store</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-juice-store.jpg" alt="Kangaroo Khaos juice store" loading="lazy" decoding="async">
+          <figcaption>juice store</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-juice-storage.jpg" alt="Kangaroo Khaos juice storage" loading="lazy" decoding="async">
+          <figcaption>juice storage</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-mystery-box.jpg" alt="Kangaroo Khaos mystery box" loading="lazy" decoding="async">
+          <figcaption>mystery box</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-free-coins.jpg" alt="Kangaroo Khaos free coins" loading="lazy" decoding="async">
+          <figcaption>free coins</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-lucky-wheel.jpg" alt="Kangaroo Khaos lucky wheel spin" loading="lazy" decoding="async">
+          <figcaption>lucky wheel spin</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-leaderboard.jpg" alt="Kangaroo Khaos leaderboard" loading="lazy" decoding="async">
+          <figcaption>leaderboard</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-game-over.jpg" alt="Kangaroo Khaos game over screen" loading="lazy" decoding="async">
+          <figcaption>game over screen</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-pause.jpg" alt="Kangaroo Khaos pause screen" loading="lazy" decoding="async">
+          <figcaption>pause screen</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-settings.jpg" alt="Kangaroo Khaos settings" loading="lazy" decoding="async">
+          <figcaption>settings</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-account-connections.jpg" alt="Kangaroo Khaos account connections" loading="lazy" decoding="async">
+          <figcaption>account connections</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-google-apple.jpg" alt="Kangaroo Khaos Google and Apple sign in" loading="lazy" decoding="async">
+          <figcaption>Google and Apple sign in</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-connection-states.jpg" alt="Kangaroo Khaos connection states" loading="lazy" decoding="async">
+          <figcaption>connection states</figcaption>
+        </figure>
+        <figure class="k-ui-card"><img src="images/kangaroo_khaos/ui-interface.jpg" alt="Kangaroo Khaos interface" loading="lazy" decoding="async">
+          <figcaption>interface</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="k-quote">
+    <div class="k-container k-quote-grid">
+      <div>
+        <p class="k-eyebrow">06 · THE TAKEAWAY</p>
+        <h2>The project demonstrates <em>end-to-end game art capability.</em></h2>
+      </div>
+      <div>
+        <p>From the first character sketch to the final interface system, Kangaroo Khaos shows the kind of connected production support Archer Art Studio can provide for studios, indie teams and long-term game projects.</p>
+        <a class="k-btn" href="index.html#contact">Discuss Your Game Project ›</a></div>
+    </div>
+  </section>
+  <section class="k-cta">
+    <div class="k-container k-cta-inner">
+      <p class="k-eyebrow">HAVE A SIMILAR PROJECT?</p>
+      <h2>Need a reliable art partner?</h2>
+      <p>Bring us a character, asset pack, UI system or complete game-art pipeline. We can plug into your workflow and help move the project forward.</p>
+      <a class="k-btn" href="index.html#contact">Start a Project ›</a></div>
+  </section>
+</main>
+<footer>
+  <div class="aas-container">© 2026 Archer Art Studio · Game Art · 3D · UI/UX · AR · Promotional Art</div>
+</footer>
+<div class="aas-style-toggle" id="aas-styletoggle" aria-label="Light and dark mode"><span class="aas-style-toggle-label aas-light-label">LIGHT</span>
+  <button type="button" class="aas-style-toggle-switch" aria-pressed="false" aria-label="Switch to dark mode"><span class="aas-style-toggle-knob"></span></button>
+  <span class="aas-style-toggle-label aas-dark-label">DARK</span></div>
+<div class="k-lightbox" id="k-lightbox">
+  <button class="k-close" aria-label="Close image">×</button>
+  <img id="k-lightbox-img" src="" alt="" loading="lazy" decoding="async"></div>
+<script src="scripts/script.js"></script><script src="scripts/dark-mode.js"></script><script src="scripts/case-parallax.js"></script><script src="scripts/project-form.js"></script><script src="scripts/premium-parallax.js"></script> 
+<script>
+(function(){const box=document.getElementById('k-lightbox'), img=document.getElementById('k-lightbox-img');document.querySelectorAll('.k-ui-card img,.k-image-card img').forEach(x=>x.addEventListener('click',()=>{img.src=x.src;img.alt=x.alt;box.classList.add('open')}));function close(){box.classList.remove('open');img.src=''}box.querySelector('.k-close').addEventListener('click',close);box.addEventListener('click',e=>{if(e.target===box)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();
+</script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore Archer Art Studio's game art portfolio featuring 2D and 3D game art, character design, 3D modeling, UI/UX, animation and promotional artwork.">
+<meta name="keywords" content="Archer Art Studio portfolio, game art portfolio, 3D game art, character design, 3D modeling, game UI UX, game animation, promotional art">
+<meta property="og:title" content="Portfolio | Archer Art Studio">
+<meta property="og:description" content="Explore Archer Art Studio's 2D and 3D game art, characters, assets, UI/UX, animation and promotional artwork.">
+<meta property="og:image" content="https://archerartstudio.com/images/archer_art_studio_og.png">
+<meta property="og:url" content="https://archerartstudio.com/portfolio.html">
+<meta property="og:type" content="website">
+<title>Game Art Portfolio | 2D & 3D Game Art Studio | Archer Art Studio</title>
+<link rel="canonical" href="https://archerartstudio.com/portfolio.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet/styles.css">
+<link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png?v=2">
+<link rel="shortcut icon" href="images/favicon.ico?v=2">
+<link rel="apple-touch-icon" href="images/favicon.png?v=2">
+<style>
+/* =========================================================
+   ARCHER ART STUDIO — FULL PORTFOLIO PAGE
+   Uses the same typography, header and visual system as
+   the existing home page. Portfolio images are never cropped.
+   ========================================================= */
+
+.aas-portfolio-page {
+    background: #fff;
+}
+/* Portfolio page dark-mode overrides.
+   The main stylesheet's dark mode uses .dark-mode, so these rules
+   intentionally override the portfolio page's light-only backgrounds. */
+.dark-mode.aas-portfolio-page, .aas-portfolio-page.dark-mode {
+    background: #0d1215 !important;
+    color: #f2f5f5 !important;
+}
+.dark-mode.aas-portfolio-page .aas-portfolio-hero, .dark-mode.aas-portfolio-page .aas-full-portfolio, .aas-portfolio-page.dark-mode .aas-portfolio-hero, .aas-portfolio-page.dark-mode .aas-full-portfolio {
+    background: #0d1215 !important;
+}
+.dark-mode.aas-portfolio-page .aas-portfolio-hero h1, .dark-mode.aas-portfolio-page .aas-full-project-copy h2, .dark-mode.aas-portfolio-page .aas-full-project-copy p, .aas-portfolio-page.dark-mode .aas-portfolio-hero h1, .aas-portfolio-page.dark-mode .aas-full-project-copy h2, .aas-portfolio-page.dark-mode .aas-full-project-copy p {
+    color: #f2f5f5 !important;
+}
+.dark-mode.aas-portfolio-page .aas-portfolio-hero h1 em, .dark-mode.aas-portfolio-page .aas-eyebrow, .aas-portfolio-page.dark-mode .aas-portfolio-hero h1 em, .aas-portfolio-page.dark-mode .aas-eyebrow {
+    color: #6f8cff !important;
+}
+.dark-mode.aas-portfolio-page .aas-portfolio-hero-copy, .dark-mode.aas-portfolio-page .aas-portfolio-bottom p, .aas-portfolio-page.dark-mode .aas-portfolio-hero-copy, .aas-portfolio-page.dark-mode .aas-portfolio-bottom p {
+    color: #aeb9bd !important;
+}
+.dark-mode.aas-portfolio-page .aas-full-portfolio .aas-filters button, .aas-portfolio-page.dark-mode .aas-full-portfolio .aas-filters button {
+    background: #171f23 !important;
+    color: #aeb9bd !important;
+    border-color: #2d3a40 !important;
+}
+.dark-mode.aas-portfolio-page .aas-full-portfolio .aas-filters button.aas-active, .dark-mode.aas-portfolio-page .aas-full-portfolio .aas-filters button:hover, .aas-portfolio-page.dark-mode .aas-full-portfolio .aas-filters button.aas-active, .aas-portfolio-page.dark-mode .aas-full-portfolio .aas-filters button:hover {
+    background: #6f8cff !important;
+    color: #fff !important;
+    border-color: #6f8cff !important;
+}
+.dark-mode.aas-portfolio-page .aas-portfolio-bottom, .aas-portfolio-page.dark-mode .aas-portfolio-bottom {
+    border-top-color: #2d3a40 !important;
+}
+.dark-mode.aas-portfolio-page .aas-full-project .aas-project-img, .aas-portfolio-page.dark-mode .aas-full-project .aas-project-img {
+    background: #151d21 !important;
+}
+.dark-mode.aas-portfolio-page .aas-full-project .aas-case-study-btn, .aas-portfolio-page.dark-mode .aas-full-project .aas-case-study-btn {
+    color: #6f8cff !important;
+    border-color: #6f8cff !important;
+    background: transparent !important;
+}
+.dark-mode.aas-portfolio-page .aas-full-project .aas-case-study-btn:hover, .aas-portfolio-page.dark-mode .aas-full-project .aas-case-study-btn:hover {
+    background: #6f8cff !important;
+    color: #fff !important;
+}
+.aas-portfolio-hero {
+    padding: 92px 0 72px;
+    background: #fff;
+}
+.aas-portfolio-hero-inner {
+    max-width: 900px;
+}
+.aas-portfolio-hero h1 {
+    font-family: Manrope, sans-serif;
+    margin: 0;
+    font-weight: 800;
+    line-height: 1.06;
+    letter-spacing: -.045em;
+    font-size: clamp(42px, 5vw, 68px);
+}
+.aas-portfolio-hero h1 em {
+    font-style: normal;
+    color: var(--teal);
+}
+.aas-portfolio-hero-copy {
+    max-width: 760px;
+    margin: 25px 0 0;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.65;
+}
+.aas-full-portfolio {
+    padding: 0 0 105px;
+    background: #fff;
+}
+.aas-full-portfolio .aas-filters {
+    margin: 0 0 42px;
+}
+.aas-full-portfolio .aas-filters button {
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.aas-full-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 42px;
+    row-gap: 58px;
+}
+/* Image frame: natural aspect ratio, no crop and no artificial border */
+.aas-full-project {
+    min-width: 0;
+}
+.aas-full-project .aas-project-image-link {
+    display: block;
+}
+.aas-full-project .aas-project-img {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    min-height: 0;
+    aspect-ratio: auto !important;
+    padding: 0 !important;
+    overflow: hidden;
+    display: block;
+    background: #f1f4f5;
+    border-radius: 8px;
+    line-height: 0;
+}
+.aas-full-project .aas-project-img img {
+    position: static !important;
+    display: block;
+    width: 100%;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: initial !important;
+    background: transparent;
+}
+.aas-full-project .aas-project-img:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( 180deg, rgba(0,0,0,0) 55%, rgba(10,20,25,.58) 100% );
+    pointer-events: none;
+}
+.aas-full-project .aas-project-img span {
+    position: absolute;
+    left: 16px;
+    bottom: 13px;
+    z-index: 2;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: .15em;
+    font-weight: 800;
+}
+.aas-full-project-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 18px;
+}
+.aas-full-project-copy {
+    min-width: 0;
+}
+.aas-full-project-copy .aas-eyebrow {
+    margin-bottom: 7px;
+}
+.aas-full-project-copy h2 {
+    font-family: Manrope, sans-serif;
+    margin: 0 0 3px;
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: -.025em;
+}
+.aas-full-project-copy p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.aas-full-project .aas-case-study-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 12px 17px;
+    font-size: 13px;
+}
+.aas-full-project.is-hidden {
+    display: none;
+}
+.aas-portfolio-bottom {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.aas-portfolio-bottom p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+/* Keep the same logo/header sizing from the existing site */
+.aas-portfolio-page .aas-logo-image .aas-logo-light {
+    display: block !important;
+}
+.aas-portfolio-page .aas-logo-image .aas-logo-dark {
+    display: none !important;
+}
+.aas-portfolio-page.dark-mode .aas-logo-image .aas-logo-light, .dark-mode.aas-portfolio-page .aas-logo-image .aas-logo-light {
+    display: none !important;
+}
+.aas-portfolio-page.dark-mode .aas-logo-image .aas-logo-dark, .dark-mode.aas-portfolio-page .aas-logo-image .aas-logo-dark {
+    display: block !important;
+}
+.aas-portfolio-page .aas-logo-image img {
+    display: block;
+    width: 190px;
+    height: auto;
+    max-height: 54px;
+    object-fit: contain;
+}
+
+@media(max-width:900px) {
+.aas-portfolio-hero {
+    padding: 72px 0 55px;
+}
+.aas-full-portfolio-grid {
+    column-gap: 24px;
+    row-gap: 45px;
+}
+.aas-full-project-info {
+    align-items: flex-start;
+}
+.aas-full-project-copy h2 {
+    font-size: 20px;
+}
+}
+
+@media(max-width:600px) {
+.aas-portfolio-hero {
+    padding: 55px 0 42px;
+}
+.aas-portfolio-hero-copy {
+    font-size: 16px;
+}
+.aas-full-portfolio {
+    padding-bottom: 70px;
+}
+.aas-full-portfolio-grid {
+    grid-template-columns: 1fr;
+    row-gap: 42px;
+}
+.aas-full-project-info {
+    gap: 14px;
+}
+.aas-full-project-copy h2 {
+    font-size: 19px;
+}
+.aas-full-project-copy p {
+    font-size: 13px;
+}
+.aas-full-project .aas-case-study-btn {
+    padding: 10px 13px;
+    font-size: 12px;
+}
+.aas-portfolio-bottom {
+    display: block;
+    margin-top: 55px;
+}
+.aas-portfolio-bottom .aas-btn {
+    margin-top: 16px;
+}
+.aas-portfolio-page .aas-logo-image img {
+    width: 165px;
+}
+}
+</style>
+</head>
+
+<body class="aas-portfolio-page">
+<header class="aas-site-header">
+  <div class="aas-container aas-nav"> <a class="aas-brand aas-logo-image" href="index.html" aria-label="Archer Art Studio home"> <img class="aas-logo-light" src="images/archer-logo-transparent.png" alt="Archer Art Studio"> <img class="aas-logo-dark" src="images/archer-logo-dark.png" alt="" aria-hidden="true"> </a>
+    <button class="aas-menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="aas-menu"> <a href="index.html#aas-about">About</a> <a href="index.html#aas-services">Services</a> <a href="portfolio.html" aria-current="page"><b style="color: #2F5FFF">Portfolio</b></a> <a href="index.html#aas-process">Process</a> <a href="index.html#aas-partners">Partners</a> <a href="index.html#aas-contact">Contact</a> <a class="aas-nav-cta" href="index.html#aas-contact">Start a Project</a> </nav>
+  </div>
+</header>
+<main>
+  <section class="aas-portfolio-hero">
+    <div class="aas-container">
+      <div class="aas-portfolio-hero-inner">
+        <p class="aas-eyebrow">OUR PORTFOLIO</p>
+        <h1> Selected work that<br>
+          <em>moves ideas forward.</em> </h1>
+        <p class="aas-portfolio-hero-copy"> Explore our 2D and 3D game art, characters, assets, UI/UX,
+          animation and promotional artwork. Open a project to see the
+          complete case study and production process. </p>
+      </div>
+    </div>
+  </section>
+  <section class="aas-full-portfolio">
+    <div class="aas-container">
+      <div class="aas-filters" role="tablist" aria-label="Filter portfolio">
+        <button class="aas-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button data-filter="logo" role="tab" aria-selected="false">Logo Design</button>
+        <button data-filter="3d" role="tab" aria-selected="false">3D Art</button>
+        <button data-filter="game" role="tab" aria-selected="false">Game Art</button>
+        <button data-filter="2d" role="tab" aria-selected="false">2D / Illustration</button>
+        <button data-filter="ui" role="tab" aria-selected="false">UI/UX</button>
+      </div>
+      <div class="aas-full-portfolio-grid">
+        <article class="aas-full-project" data-type="game"> <a class="aas-project-image-link" href="kangaroo-khaos.html">
+          <div class="aas-project-img aas-kangaroo"> <img
+                src="images/kangaroo_khaos/Kangaroo_1280X900.jpg"
+                alt="Kangaroo Khaos 3D character render"
+                loading="lazy"
+              > <span>3D GAME ART</span> </div>
+          </a>
+          <div class="aas-full-project-info">
+            <div class="aas-full-project-copy">
+              <p class="aas-eyebrow">PROJECT</p>
+              <h2>Kangaroo Khaos</h2>
+              <p>Concept • 3D • Rigging • Animation</p>
+            </div>
+            <a class="aas-btn aas-secondary aas-case-study-btn" href="kangaroo-khaos.html"> View Case Study › </a> </div>
+        </article>
+        <article class="aas-full-project" data-type="3d"> <a class="aas-project-image-link" href="jack-the-miner.html">
+          <div class="aas-project-img"> <img
+                src="images/Jack_The_Miner/Jack_the_Miner_1280X900.jpg"
+                alt="Jack the Miner 3D game character and vehicle"
+                loading="lazy"
+              > <span>3D GAME ASSETS</span> </div>
+          </a>
+          <div class="aas-full-project-info">
+            <div class="aas-full-project-copy">
+              <p class="aas-eyebrow">PROJECT</p>
+              <h2>Jack the Miner</h2>
+              <p>Characters • Vehicles • Props • Texturing</p>
+            </div>
+            <a class="aas-btn aas-secondary aas-case-study-btn" href="jack-the-miner.html"> View Case Study › </a> </div>
+        </article>
+        <article class="aas-full-project" data-type="game"> <a class="aas-project-image-link" href="squishy-sauras.html">
+          <div class="aas-project-img"> <img
+                src="images/Squishy_Saurus/Squishy_1280X900.jpg"
+                alt="Squishy Sauras AR character"
+                loading="lazy"
+              > <span>3D • AR • UI/UX</span> </div>
+          </a>
+          <div class="aas-full-project-info">
+            <div class="aas-full-project-copy">
+              <p class="aas-eyebrow">PROJECT</p>
+              <h2>Squishy Sauras</h2>
+              <p>3D Character • Animation • AR • UI/UX</p>
+            </div>
+            <a class="aas-btn aas-secondary aas-case-study-btn" href="squishy-sauras.html"> View Case Study › </a> </div>
+        </article>
+        <article class="aas-full-project" data-type="ui"> <a class="aas-project-image-link" href="shoot-them-all.html">
+          <div class="aas-project-img"> <img
+                src="images/Shoot_Them_All/Shoot_them_all_1280X900.jpg"
+                alt="Shoot Them All gameplay interface"
+                loading="lazy"
+              > <span>GAME UI/UX</span> </div>
+          </a>
+          <div class="aas-full-project-info">
+            <div class="aas-full-project-copy">
+              <p class="aas-eyebrow">PROJECT</p>
+              <h2>Shoot Them All</h2>
+              <p>Mobile Game • UI/UX • HUD</p>
+            </div>
+            <a class="aas-btn aas-secondary aas-case-study-btn" href="shoot-them-all.html"> View Case Study › </a> </div>
+        </article>
+        <article class="aas-full-project" data-type="ui"> <a class="aas-project-image-link" href="midnight-runner.html">
+          <div class="aas-project-img"> <img
+                src="images/Midnight_Runner/Midnight_Runner_1280X900.jpg"
+                alt="Midnight Runner game artwork"
+                loading="lazy"
+              > <span>MOBILE RUNNER</span> </div>
+          </a>
+          <div class="aas-full-project-info">
+            <div class="aas-full-project-copy">
+              <p class="aas-eyebrow">PROJECT</p>
+              <h2>Midnight Runner</h2>
+              <p>UI/UX • Concept • Storyboarding</p>
+            </div>
+            <a class="aas-btn aas-secondary aas-case-study-btn" href="midnight-runner.html"> View Case Study › </a> </div>
+        </article>
+        <article class="aas-full-project" data-type="2d"> <a class="aas-project-image-link" href="game-promo-art.html">
+          <div class="aas-project-img"> <img
+                src="images/Game_Promo_Art/Wave_Thumb_1280X900.jpg"
+                alt="Game promotional artwork"
+                loading="lazy"
+              > <span>GAME PROMO ART</span> </div>
+          </a>
+          <div class="aas-full-project-info">
+            <div class="aas-full-project-copy">
+              <p class="aas-eyebrow">PROJECT</p>
+              <h2>Game Promo Art</h2>
+              <p>Marketing • Key Visuals • Illustration</p>
+            </div>
+            <a class="aas-btn aas-secondary aas-case-study-btn" href="game-promo-art.html"> View Case Study › </a> </div>
+        </article>
+        <article class="aas-full-project" data-type="game"> <a class="aas-project-image-link" href="mascot-character-design.html">
+          <div class="aas-project-img aas-kangaroo"> <img
+                src="images/mascot_character/Thumb.png"
+                alt="Kangaroo Khaos 3D character render"
+                loading="lazy"
+              > <span>Mascot Design</span> </div>
+          </a>
+          <div class="aas-full-project-info">
+            <div class="aas-full-project-copy">
+              <p class="aas-eyebrow">PROJECT</p>
+              <h2>Mascot Design</h2>
+              <p>Concept • Sketch • 3D • Rigging</p>
+            </div>
+            <a class="aas-btn aas-secondary aas-case-study-btn" href="mascot-character-design.html"> View Case Study › </a> </div>
+        </article>
+      </div>
+      <div class="aas-portfolio-bottom">
+        <p>Looking for more characters, environments, illustrations, UI or game assets?</p>
+        <a
+          class="aas-btn aas-secondary"
+          href="https://www.behance.net/dhavalartist"
+          target="_blank"
+          rel="noopener"
+        > View Full Portfolio › </a> </div>
+    </div>
+  </section>
+</main>
+<footer class="aas-footer">
+  <div class="aas-container aas-footer-grid">
+    <div> <a class="aas-brand aas-logo-image aas-footer-logo" href="index.html"> <img class="aas-logo-light" src="images/archer-logo-transparent.png" alt="Archer Art Studio"> <img class="aas-logo-dark" src="images/archer-logo-dark.png" alt="" aria-hidden="true"> </a>
+      <p>2D/3D art, game assets and visual design for ambitious digital projects.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="index.html#aas-about">About</a> <a href="index.html#aas-services">Services</a> <a href="portfolio.html">Portfolio</a> <a href="index.html#aas-process">Process</a> <a href="index.html#aas-partners">Partners</a> </div>
+    <div>
+      <h4>Services</h4>
+      <a href="index.html#aas-services">2D &amp; Concept Art</a> <a href="index.html#aas-services">3D Art</a> <a href="index.html#aas-services">Game Art</a> <a href="index.html#aas-services">UI/UX</a> </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:dhaval@archerartstudio.com">dhaval@archerartstudio.com</a> <a href="https://www.archerartstudio.com/">archerartstudio.com</a> <span>Ahmedabad, India • Worldwide</span> </div>
+  </div>
+  <div class="aas-container aas-copyright"> <span>© 2026 Archer Art Studio. All rights reserved.</span> <span>Privacy • Terms</span> </div>
+</footer>
+<div class="aas-style-toggle" id="aas-styletoggle" aria-label="Light and dark mode"> <span class="aas-style-toggle-label aas-light-label">LIGHT</span>
+  <button
+    type="button"
+    class="aas-style-toggle-switch"
+    aria-pressed="false"
+    aria-label="Switch to dark mode"
+  > <span class="aas-style-toggle-knob"></span> </button>
+  <span class="aas-style-toggle-label aas-dark-label">DARK</span> </div>
+<script src="scripts/script.js"></script> 
+<script src="scripts/dark-mode.js"></script> 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filters = document.querySelectorAll(".aas-full-portfolio .aas-filters button");
+  const projects = document.querySelectorAll(".aas-full-project");
+
+  filters.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const filter = button.dataset.filter;
+
+      filters.forEach(function (item) {
+        item.classList.remove("aas-active");
+        item.setAttribute("aria-selected", "false");
+      });
+
+      button.classList.add("aas-active");
+      button.setAttribute("aria-selected", "true");
+
+      projects.forEach(function (project) {
+        const type = project.dataset.type;
+        const show = filter === "all" || type === filter;
+        project.classList.toggle("is-hidden", !show);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>

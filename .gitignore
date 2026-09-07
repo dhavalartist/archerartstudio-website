@@ -1,0 +1,14 @@
+# https://git-scm.com/docs/gitignore
+# https://help.github.com/articles/ignoring-files
+# Example.gitignore files : https://github.com/github/gitignore
+_notes/
+/bower_components/
+/node_modules/
+
+Niksan_Test/
+.htaccess.lock-*
+.htaccess.phpupgrader*
+.htaccess.no_htaccess.phpupgrader
+93e41c6e
+index - Copy.html
+jack-the-miner - Copy.html
