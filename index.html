@@ -24,7 +24,17 @@
 <header class="aas-site-header">
   <div class="aas-container aas-nav"> <a class="aas-brand aas-logo-image" href="#aas-top" aria-label="Archer Art Studio home"> <img class="aas-logo-light" src="images/archer-logo-transparent.png" alt="Archer Art Studio"><img class="aas-logo-dark" src="images/archer-logo-dark.png" alt="" aria-hidden="true"> </a>
     <button class="aas-menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="aas-menu"> <a href="#aas-about">About</a><a href="#aas-services">Services</a><a href="#aas-work">Portfolio</a><a href="#aas-process">Process</a><a href="#aas-partners">Partners</a><a href="#aas-contact">Contact</a> <a class="aas-nav-cta" href="#aas-contact">Start a Project</a> </nav>
+    <nav class="aas-menu">
+        <a href="#aas-about">About</a>
+        <details class="aas-nav-dropdown">
+            <summary>Services</summary>
+            <div class="aas-dropdown-menu">
+                <a href="#aas-services">All Services</a>
+                <a href="2d-game-art.html">2D Game Art</a>
+            </div>
+        </details>
+        <a href="#aas-work">Portfolio</a> <a href="#aas-process">Process</a> <a href="#aas-partners">Partners</a> <a href="#aas-contact">Contact</a> <a class="aas-nav-cta" href="#aas-contact">Start a Project</a>
+      </nav>
   </div>
 </header>
 <main id="aas-top">

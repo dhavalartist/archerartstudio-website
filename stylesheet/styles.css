@@ -4498,3 +4498,143 @@ body.dark-mode .aas-portfolio .aas-project p {
     flex-basis:16px !important;
   }
 }
+/* =========================================================
+   SERVICES DROPDOWN
+   ========================================================= */
+
+.aas-nav-dropdown {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.aas-nav-dropdown > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.aas-nav-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.aas-nav-dropdown > summary::after {
+  content: "▾";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  margin-left: 2px;
+  position: relative;
+  top: 2px;
+  transition: transform 0.2s ease;
+}
+
+.aas-nav-dropdown[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+/* Desktop dropdown panel */
+.aas-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 210px;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(20, 30, 50, 0.10);
+  border-radius: 12px;
+  box-shadow: 0 14px 35px rgba(20, 30, 50, 0.14);
+  z-index: 1000;
+}
+
+.aas-dropdown-menu a {
+  display: block;
+  padding: 11px 14px;
+  border-radius: 8px;
+  color: #171A21;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.aas-dropdown-menu a:hover {
+  background: #f2f5ff;
+  color: #2F5FFF;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .aas-dropdown-menu,
+body.dark .aas-dropdown-menu {
+  background: #171A21;
+  border-color: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .aas-dropdown-menu a,
+body.dark .aas-dropdown-menu a {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .aas-dropdown-menu a:hover,
+body.dark .aas-dropdown-menu a:hover {
+  background: rgba(47, 95, 255, 0.14);
+  color: #6f91ff;
+}
+
+
+/* =========================================================
+   MOBILE SERVICES DROPDOWN
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .aas-nav-dropdown {
+    width: 100%;
+  }
+
+  .aas-nav-dropdown > summary {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+
+  .aas-dropdown-menu {
+    position: static;
+    transform: none;
+    min-width: 0;
+    width: 100%;
+    margin: 2px 0 8px;
+    padding: 4px 0 4px 14px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .aas-dropdown-menu a {
+    padding: 10px 12px;
+    white-space: normal;
+  }
+
+  .aas-dropdown-menu a:hover {
+    background: rgba(47, 95, 255, 0.08);
+  }
+
+  html[data-theme="dark"] .aas-dropdown-menu,
+  body.dark .aas-dropdown-menu {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+}

@@ -1,0 +1,1155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Archer Art Studio provides 2D game art, character design, concept art, illustration and visual development for game studios, indie developers and digital teams.">
+<meta property="og:title" content="2D Game Art Services | Archer Art Studio">
+<meta property="og:description" content="2D game art, character design, concept art, illustration and visual development for game studios, indie developers and digital teams.">
+
+<meta property="og:image" content="https://archerartstudio.com/images/archer_art_studio_og.png">
+<meta property="og:url" content="https://archerartstudio.com/2d-game-art.html">
+<meta property="og:type" content="website">
+<title>2D Game Art Services | Characters, Concept Art & Illustration | Archer Art Studio</title>
+<link rel="canonical" href="https://archerartstudio.com/2d-game-art.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet/styles.css">
+<link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png?v=2">
+<link rel="shortcut icon" href="images/favicon.ico?v=2">
+<link rel="apple-touch-icon" href="images/favicon.png?v=2">
+<style>
+
+/* =========================================================
+   ARCHER ART STUDIO — 2D GAME ART SERVICE PAGE
+   ========================================================= */
+
+.aas-service-page {
+    background: #fff;
+    color: #101820;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.aas-service-hero {
+    padding: 105px 0 90px;
+    background: #fff;
+}
+
+.aas-service-hero-inner {
+    max-width: 950px;
+}
+
+.aas-service-hero h1 {
+    max-width: 950px;
+    margin: 16px 0 25px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.06;
+    font-weight: 800;
+    letter-spacing: -.045em;
+}
+
+.aas-service-hero-copy {
+    max-width: 800px;
+    margin: 0 0 32px;
+    color: var(--muted);
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.aas-service-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.aas-service-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.aas-service-section-alt {
+    background: #f5f7f9;
+}
+
+.aas-section-heading {
+    max-width: 780px;
+    margin-bottom: 55px;
+}
+
+.aas-section-heading h2 {
+    margin: 12px 0 18px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.aas-section-heading > p:last-child {
+    max-width: 720px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+   ========================================================= */
+
+.aas-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.aas-service-card {
+    min-width: 0;
+    padding: 32px;
+    border: 1px solid #e1e6eb;
+    border-radius: 14px;
+    background: #fff;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+.aas-service-card:hover {
+    transform: translateY(-4px);
+    border-color: #d5dce4;
+    box-shadow: 0 14px 35px rgba(20, 30, 45, .08);
+}
+
+.aas-service-card h3 {
+    margin: 0 0 14px;
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.aas-service-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   WHY ARCHER
+   ========================================================= */
+
+.aas-service-two-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 80px;
+    align-items: start;
+}
+
+.aas-service-two-column h2 {
+    margin: 12px 0 0;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.aas-service-two-column > div:last-child p {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.aas-service-points {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 65px;
+}
+
+.aas-service-points > div {
+    padding-top: 22px;
+    border-top: 2px solid var(--teal);
+}
+
+.aas-service-points strong {
+    display: block;
+    margin-bottom: 9px;
+    font-family: Manrope, sans-serif;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+.aas-service-points span {
+    display: block;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.aas-process-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.aas-process-step {
+    min-width: 0;
+    padding: 26px 20px;
+    border-top: 1px solid var(--line);
+}
+
+.aas-process-step > span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--teal);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: .15em;
+}
+
+.aas-process-step h3 {
+    margin: 0 0 12px;
+    font-family: Manrope, sans-serif;
+    font-size: 19px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.aas-process-step p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SELECTED WORK
+   ========================================================= */
+
+.aas-service-work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.aas-service-work-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e1e6eb;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.aas-service-work-card > a:first-child {
+    display: block;
+    overflow: hidden;
+}
+
+.aas-service-work-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.aas-service-work-card:hover img {
+    transform: scale(1.03);
+}
+
+.aas-service-work-card > div {
+    padding: 26px;
+}
+
+.aas-service-work-card h3 {
+    margin: 8px 0 10px;
+    font-family: Manrope, sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.aas-service-work-card > div > p:not(.aas-eyebrow) {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.aas-service-work-card > div > a {
+    color: var(--teal);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.aas-service-centered-link {
+    margin-top: 45px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   WHO WE WORK WITH
+   ========================================================= */
+
+.aas-service-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 30px;
+    margin: 28px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aas-service-list li {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.aas-faq {
+    max-width: 900px;
+}
+
+.aas-faq details {
+    border-top: 1px solid var(--line);
+}
+
+.aas-faq details:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.aas-faq summary {
+    position: relative;
+    padding: 24px 50px 24px 0;
+    cursor: pointer;
+    list-style: none;
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.aas-faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.aas-faq summary::after {
+    content: "+";
+    position: absolute;
+    right: 5px;
+    top: 19px;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.aas-faq details[open] summary::after {
+    content: "−";
+}
+
+.aas-faq details p {
+    max-width: 800px;
+    margin: -3px 0 24px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.aas-service-cta {
+    padding: 105px 0;
+    background: #101820;
+    color: #fff;
+    text-align: center;
+}
+
+.aas-service-cta .aas-container {
+    max-width: 900px;
+}
+
+.aas-service-cta .aas-eyebrow {
+    color: #6f8cff;
+}
+
+.aas-service-cta h2 {
+    margin: 14px 0 20px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.aas-service-cta > .aas-container > p:not(.aas-eyebrow) {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #c7ced7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.aas-service-page .aas-logo-image .aas-logo-light {
+    display: block !important;
+}
+
+.aas-service-page .aas-logo-image .aas-logo-dark {
+    display: none !important;
+}
+
+.aas-service-page .aas-logo-image img {
+    display: block;
+    width: 190px;
+    height: auto;
+    max-height: 54px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+.dark-mode.aas-service-page,
+.aas-service-page.dark-mode {
+    background: #0d1215 !important;
+    color: #f2f5f5 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-hero,
+.aas-service-page.dark-mode .aas-service-hero {
+    background: #0d1215 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-section,
+.aas-service-page.dark-mode .aas-service-section {
+    background: #0d1215 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-section-alt,
+.aas-service-page.dark-mode .aas-service-section-alt {
+    background: #11191d !important;
+}
+
+.dark-mode.aas-service-page .aas-service-hero h1,
+.dark-mode.aas-service-page .aas-section-heading h2,
+.dark-mode.aas-service-page .aas-service-two-column h2,
+.dark-mode.aas-service-page .aas-service-card h3,
+.dark-mode.aas-service-page .aas-service-work-card h3,
+.dark-mode.aas-service-page .aas-process-step h3,
+.aas-service-page.dark-mode .aas-service-hero h1,
+.aas-service-page.dark-mode .aas-section-heading h2,
+.aas-service-page.dark-mode .aas-service-two-column h2,
+.aas-service-page.dark-mode .aas-service-card h3,
+.aas-service-page.dark-mode .aas-service-work-card h3,
+.aas-service-page.dark-mode .aas-process-step h3 {
+    color: #f2f5f5 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-hero-copy,
+.dark-mode.aas-service-page .aas-section-heading > p:last-child,
+.dark-mode.aas-service-page .aas-service-card p,
+.dark-mode.aas-service-page .aas-service-two-column p,
+.dark-mode.aas-service-page .aas-service-points span,
+.dark-mode.aas-service-page .aas-process-step p,
+.dark-mode.aas-service-page .aas-service-work-card p,
+.dark-mode.aas-service-page .aas-service-list li,
+.dark-mode.aas-service-page .aas-faq details p,
+.aas-service-page.dark-mode .aas-service-hero-copy,
+.aas-service-page.dark-mode .aas-section-heading > p:last-child,
+.aas-service-page.dark-mode .aas-service-card p,
+.aas-service-page.dark-mode .aas-service-two-column p,
+.aas-service-page.dark-mode .aas-service-points span,
+.aas-service-page.dark-mode .aas-process-step p,
+.aas-service-page.dark-mode .aas-service-work-card p,
+.aas-service-page.dark-mode .aas-service-list li,
+.aas-service-page.dark-mode .aas-faq details p {
+    color: #aeb9bd !important;
+}
+
+.dark-mode.aas-service-page .aas-service-card,
+.dark-mode.aas-service-page .aas-service-work-card,
+.aas-service-page.dark-mode .aas-service-card,
+.aas-service-page.dark-mode .aas-service-work-card {
+    background: #151d21 !important;
+    border-color: #2d3a40 !important;
+}
+
+.dark-mode.aas-service-page .aas-process-step,
+.dark-mode.aas-service-page .aas-service-list li,
+.dark-mode.aas-service-page .aas-faq details,
+.aas-service-page.dark-mode .aas-process-step,
+.aas-service-page.dark-mode .aas-service-list li,
+.aas-service-page.dark-mode .aas-faq details {
+    border-color: #2d3a40 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-points > div,
+.aas-service-page.dark-mode .aas-service-points > div {
+    border-top-color: #6f8cff;
+}
+
+.dark-mode.aas-service-page .aas-service-work-card > div > a,
+.aas-service-page.dark-mode .aas-service-work-card > div > a {
+    color: #6f8cff;
+}
+
+.dark-mode.aas-service-page .aas-service-page .aas-logo-image .aas-logo-light,
+.dark-mode.aas-service-page .aas-logo-image .aas-logo-light,
+.aas-service-page.dark-mode .aas-logo-image .aas-logo-light {
+    display: none !important;
+}
+
+.dark-mode.aas-service-page .aas-logo-image .aas-logo-dark,
+.aas-service-page.dark-mode .aas-logo-image .aas-logo-dark {
+    display: block !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .aas-service-hero {
+        padding: 80px 0 70px;
+    }
+
+    .aas-service-grid,
+    .aas-service-work-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .aas-service-two-column {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .aas-service-points {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .aas-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .aas-service-hero {
+        padding: 60px 0 55px;
+    }
+
+    .aas-service-hero h1 {
+        font-size: 42px;
+    }
+
+    .aas-service-hero-copy {
+        font-size: 16px;
+    }
+
+    .aas-service-section {
+        padding: 70px 0;
+    }
+
+    .aas-service-grid,
+    .aas-service-work-grid,
+    .aas-service-points,
+    .aas-process-grid,
+    .aas-service-list {
+        grid-template-columns: 1fr;
+    }
+
+    .aas-section-heading {
+        margin-bottom: 38px;
+    }
+
+    .aas-service-card {
+        padding: 26px;
+    }
+
+    .aas-service-two-column {
+        gap: 25px;
+    }
+
+    .aas-service-list {
+        margin-top: 20px;
+    }
+
+    .aas-service-cta {
+        padding: 75px 0;
+    }
+
+    .aas-service-page .aas-logo-image img {
+        width: 165px;
+    }
+
+}
+
+</style>
+</head>
+
+<body class="aas-portfolio-page">
+<header class="aas-site-header">
+  <div class="aas-container aas-nav"> <a class="aas-brand aas-logo-image" href="index.html" aria-label="Archer Art Studio home"> <img class="aas-logo-light" src="images/archer-logo-transparent.png" alt="Archer Art Studio"> <img class="aas-logo-dark" src="images/archer-logo-dark.png" alt="" aria-hidden="true"> </a>
+    <button class="aas-menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="aas-menu"> <a href="index.html#aas-about">About</a> <a href="index.html#aas-services">Services</a> <a href="portfolio.html" aria-current="page"><b style="color: #2F5FFF">Portfolio</b></a> <a href="index.html#aas-process">Process</a> <a href="index.html#aas-partners">Partners</a> <a href="index.html#aas-contact">Contact</a> <a class="aas-nav-cta" href="index.html#aas-contact">Start a Project</a> </nav>
+  </div>
+</header>
+<main>
+
+  <!-- 2D GAME ART HERO -->
+  <section class="aas-service-hero">
+    <div class="aas-container">
+      <div class="aas-service-hero-inner">
+
+        <p class="aas-eyebrow">2D GAME ART SERVICES</p>
+
+        <h1>2D Game Art That Moves From Idea to Production</h1>
+
+        <p class="aas-service-hero-copy">
+          From character concepts and visual development to illustrations,
+          key art and production artwork, Archer Art Studio helps game studios,
+          indie developers and digital teams turn ideas into polished 2D artwork.
+        </p>
+
+        <div class="aas-service-hero-actions">
+          <a class="aas-btn aas-primary" href="index.html#aas-contact">
+            Start a Project →
+          </a>
+
+          <a class="aas-btn aas-secondary" href="portfolio.html">
+            View Portfolio →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="aas-service-section">
+    <div class="aas-container">
+
+      <div class="aas-section-heading">
+        <p class="aas-eyebrow">WHAT WE DO</p>
+
+        <h2>2D Game Art Services</h2>
+
+        <p>
+          We create 2D artwork for games and interactive projects,
+          supporting teams from early visual exploration through final
+          production artwork.
+        </p>
+      </div>
+
+      <div class="aas-service-grid">
+
+        <article class="aas-service-card">
+          <h3>Character Art</h3>
+          <p>
+            Character concepts, silhouettes, poses, expressions, costumes
+            and polished character artwork designed around your project's
+            visual direction.
+          </p>
+        </article>
+
+        <article class="aas-service-card">
+          <h3>Concept Art</h3>
+          <p>
+            Visual exploration for characters, environments, props and
+            game worlds before production begins.
+          </p>
+        </article>
+
+        <article class="aas-service-card">
+          <h3>Game Illustration</h3>
+          <p>
+            Illustrations for games, apps, story-driven experiences,
+            digital products and other interactive projects.
+          </p>
+        </article>
+
+        <article class="aas-service-card">
+          <h3>Environment &amp; Prop Art</h3>
+          <p>
+            2D environments, backgrounds, props and visual elements that
+            establish the look and atmosphere of a game.
+          </p>
+        </article>
+
+        <article class="aas-service-card">
+          <h3>Key Art &amp; Promotional Artwork</h3>
+          <p>
+            Hero artwork, marketing visuals, launch graphics and
+            promotional illustrations for games and digital products.
+          </p>
+        </article>
+
+        <article class="aas-service-card">
+          <h3>Visual Development</h3>
+          <p>
+            Exploration of style, color, shape and visual direction to
+            establish a consistent art language for your project.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- WHY ARCHER -->
+  <section class="aas-service-section aas-service-section-alt">
+    <div class="aas-container">
+
+      <div class="aas-service-two-column">
+
+        <div>
+          <p class="aas-eyebrow">WHY ARCHER</p>
+
+          <h2>2D Art Built for Real Production</h2>
+        </div>
+
+        <div>
+          <p>
+            Good game art has to do more than look polished. It needs to
+            communicate clearly, remain consistent across assets and work
+            within the requirements of the project.
+          </p>
+
+          <p>
+            With 19+ years of creative experience across game art,
+            illustration and visual development, Archer Art Studio works
+            with studios and development teams to create artwork that can
+            move from early exploration into production.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="aas-service-points">
+
+        <div>
+          <strong>19+ Years Experience</strong>
+          <span>Long-term experience across digital art and game production.</span>
+        </div>
+
+        <div>
+          <strong>2D + 3D Capability</strong>
+          <span>One studio for projects that require both 2D and 3D artwork.</span>
+        </div>
+
+        <div>
+          <strong>Production-Focused Workflow</strong>
+          <span>Artwork developed with practical production requirements in mind.</span>
+        </div>
+
+        <div>
+          <strong>Flexible Project Support</strong>
+          <span>Support for individual deliverables, projects and ongoing production.</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROCESS -->
+  <section class="aas-service-section">
+    <div class="aas-container">
+
+      <div class="aas-section-heading">
+        <p class="aas-eyebrow">OUR PROCESS</p>
+
+        <h2>From Concept to Final Artwork</h2>
+
+        <p>
+          A clear workflow keeps the creative direction aligned while
+          allowing room for feedback and refinement.
+        </p>
+      </div>
+
+      <div class="aas-process-grid">
+
+        <div class="aas-process-step">
+          <span>01</span>
+          <h3>Discover</h3>
+          <p>
+            Understand the game, audience, references and production
+            requirements.
+          </p>
+        </div>
+
+        <div class="aas-process-step">
+          <span>02</span>
+          <h3>Explore</h3>
+          <p>
+            Develop concepts, silhouettes, composition, color and
+            visual direction.
+          </p>
+        </div>
+
+        <div class="aas-process-step">
+          <span>03</span>
+          <h3>Create</h3>
+          <p>
+            Produce the approved artwork with consistency and attention
+            to detail.
+          </p>
+        </div>
+
+        <div class="aas-process-step">
+          <span>04</span>
+          <h3>Refine</h3>
+          <p>
+            Review, iterate and polish the artwork based on project
+            feedback.
+          </p>
+        </div>
+
+        <div class="aas-process-step">
+          <span>05</span>
+          <h3>Deliver</h3>
+          <p>
+            Provide final artwork in the formats and specifications
+            required by the project.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SELECTED WORK -->
+  <section class="aas-service-section aas-service-section-alt">
+    <div class="aas-container">
+
+      <div class="aas-section-heading">
+        <p class="aas-eyebrow">SELECTED WORK</p>
+
+        <h2>2D &amp; Visual Development Work</h2>
+
+        <p>
+          Explore selected projects showing how ideas move from early
+          visual development into polished artwork.
+        </p>
+      </div>
+
+
+      <div class="aas-service-work-grid">
+
+        <article class="aas-service-work-card">
+          <a href="game-promo-art.html">
+            <img
+              src="images/Game_Promo_Art/Wave_Thumb_1280X900.jpg"
+              alt="Game promotional artwork created by Archer Art Studio"
+              loading="lazy"
+            >
+          </a>
+
+          <div>
+            <p class="aas-eyebrow">GAME PROMO ART</p>
+            <h3>Game Promo Art</h3>
+            <p>
+              Marketing visuals, key artwork and illustration for
+              game promotion.
+            </p>
+
+            <a href="game-promo-art.html">
+              View Case Study →
+            </a>
+          </div>
+        </article>
+
+
+        <article class="aas-service-work-card">
+          <a href="midnight-runner.html">
+            <img
+              src="images/Midnight_Runner/Midnight_Runner_1280X900.jpg"
+              alt="Midnight Runner game concept and visual development artwork"
+              loading="lazy"
+            >
+          </a>
+
+          <div>
+            <p class="aas-eyebrow">VISUAL DEVELOPMENT</p>
+            <h3>Midnight Runner</h3>
+            <p>
+              Concept development, storyboarding and visual work for
+              a mobile game project.
+            </p>
+
+            <a href="midnight-runner.html">
+              View Case Study →
+            </a>
+          </div>
+        </article>
+
+
+        <article class="aas-service-work-card">
+          <a href="kangaroo-khaos.html">
+            <img
+              src="images/kangaroo_khaos/Kangaroo_1280X900.jpg"
+              alt="Kangaroo Khaos character concept and game art"
+              loading="lazy"
+            >
+          </a>
+
+          <div>
+            <p class="aas-eyebrow">CHARACTER DEVELOPMENT</p>
+            <h3>Kangaroo Khaos</h3>
+            <p>
+              Character concept development progressing into a
+              complete game-art production pipeline.
+            </p>
+
+            <a href="kangaroo-khaos.html">
+              View Case Study →
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="aas-service-centered-link">
+        <a class="aas-btn aas-secondary" href="portfolio.html">
+          Explore Full Portfolio →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- WHO WE WORK WITH -->
+  <section class="aas-service-section">
+    <div class="aas-container">
+
+      <div class="aas-service-two-column">
+
+        <div>
+          <p class="aas-eyebrow">WHO WE WORK WITH</p>
+
+          <h2>Built for Game Studios, Indie Developers &amp; Digital Teams</h2>
+        </div>
+
+        <div>
+          <p>
+            Whether you need a single character illustration, a complete
+            visual-development package or ongoing 2D production support,
+            Archer Art Studio can work alongside your existing team and
+            adapt to your production workflow.
+          </p>
+
+          <ul class="aas-service-list">
+            <li>Game studios</li>
+            <li>Indie developers</li>
+            <li>Publishers</li>
+            <li>Digital agencies</li>
+            <li>Startups</li>
+            <li>Interactive experiences</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="aas-service-section aas-service-section-alt">
+    <div class="aas-container">
+
+      <div class="aas-section-heading">
+        <p class="aas-eyebrow">FAQ</p>
+
+        <h2>2D Game Art FAQ</h2>
+      </div>
+
+      <div class="aas-faq">
+
+        <details>
+          <summary>What types of 2D game art do you create?</summary>
+          <p>
+            Archer Art Studio creates character art, concept art,
+            illustrations, visual-development artwork, environments,
+            props, key art and promotional artwork for games and
+            interactive projects.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can you create 2D character concepts for a new game?</summary>
+          <p>
+            Yes. Character development can begin with visual exploration
+            and concept work before moving toward polished production
+            artwork.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you provide ongoing 2D game art production?</summary>
+          <p>
+            Yes. Archer Art Studio can support individual deliverables,
+            project-based production and ongoing art requirements depending
+            on the project's scope.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can you work with an existing art direction?</summary>
+          <p>
+            Yes. We can work from established references, visual
+            direction and existing project requirements to maintain
+            consistency across new artwork.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can Archer Art Studio handle both 2D and 3D artwork?</summary>
+          <p>
+            Yes. Archer Art Studio provides both 2D and 3D game art,
+            allowing projects that require multiple types of artwork
+            to work with one creative partner.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FINAL CTA -->
+  <section class="aas-service-cta">
+    <div class="aas-container">
+
+      <p class="aas-eyebrow">START A PROJECT</p>
+
+      <h2>Need 2D Game Art for Your Project?</h2>
+
+      <p>
+        Tell us what you're building, what artwork you need and where
+        you are in production. We'll help determine the right scope
+        and workflow.
+      </p>
+
+      <a class="aas-btn aas-primary" href="index.html#aas-contact">
+        Start a Project →
+      </a>
+
+    </div>
+  </section>
+
+</main>
+<footer class="aas-footer">
+  <div class="aas-container aas-footer-grid">
+    <div> <a class="aas-brand aas-logo-image aas-footer-logo" href="index.html"> <img class="aas-logo-light" src="images/archer-logo-transparent.png" alt="Archer Art Studio"> <img class="aas-logo-dark" src="images/archer-logo-dark.png" alt="" aria-hidden="true"> </a>
+      <p>2D/3D art, game assets and visual design for ambitious digital projects.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="index.html#aas-about">About</a> <a href="index.html#aas-services">Services</a> <a href="portfolio.html">Portfolio</a> <a href="index.html#aas-process">Process</a> <a href="index.html#aas-partners">Partners</a> </div>
+    <div>
+      <h4>Services</h4>
+      <a href="index.html#aas-services">2D &amp; Concept Art</a> <a href="index.html#aas-services">3D Art</a> <a href="index.html#aas-services">Game Art</a> <a href="index.html#aas-services">UI/UX</a> </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:dhaval@archerartstudio.com">dhaval@archerartstudio.com</a> <a href="https://www.archerartstudio.com/">archerartstudio.com</a> <span>Ahmedabad, India • Worldwide</span> </div>
+  </div>
+  <div class="aas-container aas-copyright"> <span>© 2026 Archer Art Studio. All rights reserved.</span> <span>Privacy • Terms</span> </div>
+</footer>
+<div class="aas-style-toggle" id="aas-styletoggle" aria-label="Light and dark mode"> <span class="aas-style-toggle-label aas-light-label">LIGHT</span>
+  <button
+    type="button"
+    class="aas-style-toggle-switch"
+    aria-pressed="false"
+    aria-label="Switch to dark mode"
+  > <span class="aas-style-toggle-knob"></span> </button>
+  <span class="aas-style-toggle-label aas-dark-label">DARK</span> </div>
+<script src="scripts/script.js"></script> 
+<script src="scripts/dark-mode.js"></script> 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filters = document.querySelectorAll(".aas-full-portfolio .aas-filters button");
+  const projects = document.querySelectorAll(".aas-full-project");
+
+  filters.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const filter = button.dataset.filter;
+
+      filters.forEach(function (item) {
+        item.classList.remove("aas-active");
+        item.setAttribute("aria-selected", "false");
+      });
+
+      button.classList.add("aas-active");
+      button.setAttribute("aria-selected", "true");
+
+      projects.forEach(function (project) {
+        const type = project.dataset.type;
+        const show = filter === "all" || type === filter;
+        project.classList.toggle("is-hidden", !show);
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
