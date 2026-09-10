@@ -57,3 +57,81 @@ buttons.forEach(btn => btn.addEventListener('click', () => {
     );
   });
 }));
+
+/* =========================================================
+   2D GAME ART HERO SLIDER
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slider = document.querySelector(".aas-2d-slider");
+
+    if (!slider) {
+        return;
+    }
+
+    const slides = slider.querySelectorAll(".aas-2d-slide");
+    const dots = document.querySelectorAll(".aas-2d-slider-dots button");
+    const previous = slider.querySelector(".aas-2d-slider-prev");
+    const next = slider.querySelector(".aas-2d-slider-next");
+
+    let current = 0;
+    let timer;
+
+    function showSlide(index) {
+
+        current = (index + slides.length) % slides.length;
+
+        slides.forEach(function (slide, i) {
+            slide.classList.toggle("is-active", i === current);
+        });
+
+        dots.forEach(function (dot, i) {
+            dot.classList.toggle("is-active", i === current);
+        });
+    }
+
+    function startSlider() {
+        timer = setInterval(function () {
+            showSlide(current + 1);
+        }, 4500);
+    }
+
+    function resetSlider() {
+        clearInterval(timer);
+        startSlider();
+    }
+
+    if (next) {
+        next.addEventListener("click", function () {
+            showSlide(current + 1);
+            resetSlider();
+        });
+    }
+
+    if (previous) {
+        previous.addEventListener("click", function () {
+            showSlide(current - 1);
+            resetSlider();
+        });
+    }
+
+    dots.forEach(function (dot, index) {
+        dot.addEventListener("click", function () {
+            showSlide(index);
+            resetSlider();
+        });
+    });
+
+    slider.addEventListener("mouseenter", function () {
+        clearInterval(timer);
+    });
+
+    slider.addEventListener("mouseleave", function () {
+        startSlider();
+    });
+
+    showSlide(0);
+    startSlider();
+
+});

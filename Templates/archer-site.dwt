@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="google-site-verification" content="2LvWR_97yC-lxZfOxrT5Doq7GKf-lE_aii_0to8e03Y" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TemplateBeginEditable name="SEO_Head" -->
+<meta name="description" content="Archer Art Studio provides 2D & 3D game art, character design, 3D modeling, UI/UX and animation for game studios, indie developers and digital teams.">
+<meta property="og:title" content="Archer Art Studio | 2D & 3D Game Art Studio">
+<meta property="og:description" content="Archer Art Studio provides 2D & 3D game art, character design, 3D modeling, UI/UX and animation for game studios, indie developers and digital teams.">
+<meta property="og:image" content="https://archerartstudio.com/images/archer_art_studio_og.png">
+<meta property="og:url" content="https://archerartstudio.com/">
+<meta property="og:type" content="website">
+<title>Archer Art Studio | 2D &amp; 3D Game Art Studio</title>
+<link rel="canonical" href="https://archerartstudio.com/">
+<!-- TemplateEndEditable -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../stylesheet/styles.css">
+<link rel="stylesheet" href="stylesheet/service_pages.css">
+<link rel="icon" type="image/png" sizes="512x512" href="../images/favicon.png?v=2">
+<link rel="shortcut icon" href="../images/favicon.ico?v=2">
+<link rel="apple-touch-icon" href="../images/favicon.png?v=2">
+
+</head>
+<body class="aas-service-page">
+<header class="aas-site-header">
+  <div class="aas-container aas-nav">
+
+    <a class="aas-brand aas-logo-image"
+       href="../index.html"
+       aria-label="Archer Art Studio home">
+      <img class="aas-logo-light"
+           src="../images/archer-logo-transparent.png"
+           alt="Archer Art Studio">
+      <img class="aas-logo-dark"
+           src="../images/archer-logo-dark.png"
+           alt=""
+           aria-hidden="true">
+    </a>
+
+    <button class="aas-menu-toggle"
+            aria-label="Open menu"
+            aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="aas-menu">
+
+      <a href="../index.html#aas-about">
+        About
+      </a>
+
+      <details class="aas-nav-dropdown">
+        <summary>Services</summary>
+
+        <div class="aas-dropdown-menu">
+          <a href="../index.html#aas-services">
+            All Services
+          </a>
+
+          <a href="../2d-game-art.html">
+            2D Game Art
+          </a>
+
+          <a href="../3d-game-art.html">
+            3D Game Art
+          </a>
+        </div>
+      </details>
+
+      <a href="../portfolio.html">
+        Portfolio
+      </a>
+
+      <a href="../index.html#aas-process">
+        Process
+      </a>
+
+      <a href="../index.html#aas-partners">
+        Partners
+      </a>
+
+      <a href="../index.html#aas-contact">
+        Contact
+      </a>
+
+      <a class="aas-nav-cta"
+         href="../index.html#aas-contact">
+        Start a Project
+      </a>
+
+    </nav>
+
+  </div>
+</header>
+<!-- TemplateBeginEditable name="Main_Content" -->
+<main id="aas-top">
+        <section class="aas-hero">
+                <div class="aas-premium-floaters" aria-hidden="true"> <span class="aas-premium-floater aas-floater-orbit" data-parallax-speed="0.12"></span> <span class="aas-premium-floater aas-floater-card" data-parallax-speed="0.22"><b>3D</b><small>ART</small></span> <span class="aas-premium-floater aas-floater-orb" data-parallax-speed="0.30"></span> <span class="aas-premium-floater aas-floater-diamond" data-parallax-speed="0.17"></span></div>
+                <div class="aas-container aas-hero-grid">
+                        <div>
+                                <p class="aas-eyebrow">GAME ART · 2D/3D · UI/UX · INTERACTIVE EXPERIENCES</p>
+                                <h1>Game art that<br>
+                                        <em>moves projects forward.</em></h1>
+                                <p class="aas-lead">From a single character to a complete game-art pipeline, Archer Art Studio helps game studios, indie developers and digital teams turn ideas into polished, production-ready visuals.</p>
+                                <div class="aas-actions"> <a class="aas-btn aas-primary" href="#aas-work">Explore Our Work ›</a> <a class="aas-btn aas-secondary" href="#aas-contact">Start Your Project ›</a></div>
+                                <div class="aas-trust"> <span>19+ Years Experience</span><i></i> <span>2D &amp; 3D Game Art</span><i></i> <span>Long-Term Production Support</span></div>
+                        </div>
+                        <div class="aas-hero-art">
+                                <div class="aas-art-orbit"></div>
+                                <div class="aas-hero-character-wrap"> <img class="aas-hero-character" src="../images/Archer_Hero_Character_N2.png" alt="Archer Art Studio game character with a paintbrush bow"></div>
+                        </div>
+                </div>
+        </section>
+        <section class="aas-intro aas-why-archer" id="aas-why">
+                <div class="aas-container aas-intro-grid">
+                        <div class="aas-intro-left">
+                                <p class="aas-eyebrow">WHY ARCHER</p>
+                                <h2>From one asset to<br>
+                                        <em>a complete art pipeline.</em></h2>
+                                <div class="aas-character-visual" aria-hidden="true"> <img class="aas-character-pointing" src="../images/Character_Pointing.png" alt="Archer Art Studio character pointing toward our services" loading="lazy" onerror="this.onerror=null;this.src='images/archer_hero_character_flipped.png'"></div>
+                        </div>
+                        <div class="aas-intro-content">
+                                <p class="aas-why-lead">Archer Art Studio helps game studios, indie developers and digital teams bring ideas from concept to production-ready visuals — from individual assets to complete 2D/3D art support.</p>
+                                <div class="aas-intro-points">
+                                        <div class="aas-intro-point">
+                                                <h3><span class="aas-point-arrow">›</span>19+ Years of Experience</h3>
+                                                <div class="aas-point-line"></div>
+                                                <p>Deep experience across game art, 2D/3D production, UI/UX, character design and visual development.</p>
+                                        </div>
+                                        <div class="aas-intro-point">
+                                                <h3><span class="aas-point-arrow">›</span>End-to-End Art Support</h3>
+                                                <div class="aas-point-line"></div>
+                                                <p>From concept and characters to environments, props, UI/UX, animation and production assets.</p>
+                                        </div>
+                                        <div class="aas-intro-point">
+                                                <h3><span class="aas-point-arrow">›</span>Production-Ready Workflow</h3>
+                                                <div class="aas-point-line"></div>
+                                                <p>Artwork created with real production requirements in mind — not just visuals that look good in a presentation.</p>
+                                        </div>
+                                        <div class="aas-intro-point">
+                                                <h3><span class="aas-point-arrow">›</span>Flexible Collaboration</h3>
+                                                <div class="aas-point-line"></div>
+                                                <p>Hire us for a single asset, a complete project, or ongoing art production support as your needs grow.</p>
+                                        </div>
+                                </div>
+                                <a class="aas-text-link" href="#aas-services">Explore our services ›</a></div>
+                </div>
+        </section>
+        <section class="aas-one-team">
+                <div class="aas-container aas-one-team-grid">
+                        <div>
+                                <p>From concept and 2D/3D art to UI/UX, animation and Unity development, <strong>Archer Art Studio</strong> can support more of your project under one roof.</p>
+                                <div class="aas-one-team-flow"> <span>Concept</span><i>›</i><span>2D / 3D</span><i>›</i><span>UI / UX</span><i>›</i><span>Animation</span><i>›</i><span>Unity</span></div>
+                                <a class="aas-text-link" href="#aas-contact">Discuss Your Complete Project ›</a></div>
+                        <div>
+                                <p class="aas-eyebrow">ONE PARTNER FOR MORE OF YOUR PROJECT</p>
+                                <h2>One team. One pipeline.<br>
+                                        <em>One point of contact.</em></h2>
+                        </div>
+                </div>
+        </section>
+        <section class="aas-services aas-section" id="aas-services">
+                <div class="aas-container">
+                        <div class="aas-section-head">
+                                <div>
+                                        <p class="aas-eyebrow">OUR SERVICES</p>
+                                        <h2>Solutions that bring<br>
+                                                <em>your ideas to life.</em></h2>
+                                </div>
+                                <p>Choose a focused service or combine disciplines for a complete art and development pipeline.</p>
+                        </div>
+                        <div class="aas-service-grid">
+                                <article class="aas-service">
+                                        <h3>2D &amp; Concept Art</h3>
+                                        <p>Character concepts, environments, illustrations, key art and visual development.</p>
+                                        <a href="#aas-contact">Start a project ›</a></article>
+                                <article class="aas-service">
+                                        <h3>Logo Design</h3>
+                                        <p>Distinctive logos and visual marks for games, studios, products and brands, designed to be clear, memorable and production-ready.</p>
+                                        <a href="#aas-contact">Start a project ›</a></article>
+                                <article class="aas-service">
+                                        <h3>3D Modeling &amp; Texturing</h3>
+                                        <p>Game-ready characters, props, vehicles, environments and production-ready materials.</p>
+                                        <a href="#aas-contact">Start a project ›</a></article>
+                                <article class="aas-service">
+                                        <h3>Game UI/UX</h3>
+                                        <p>Menus, HUDs, mobile interfaces and interaction flows built for real players.</p>
+                                        <a href="#aas-contact">Start a project ›</a></article>
+                                <article class="aas-service">
+                                        <h3>Character Design &amp; Animation</h3>
+                                        <p>Stylized characters from concept through modeling, rigging and animation.</p>
+                                        <a href="#aas-contact">Start a project ›</a></article>
+                                <article class="aas-service">
+                                        <h3>AR / Interactive 3D</h3>
+                                        <p>3D assets and interactive experiences for AR, VR, mobile and web.</p>
+                                        <a href="#aas-contact">Start a project ›</a></article>
+                                <article class="aas-service ">
+                                        <h3>Unity Game Development</h3>
+                                        <p>Unity 2D/3D development, gameplay, UI integration, scenes, animation systems and build support.</p>
+                                        <a href="#aas-contact">Explore Unity ›</a></article>
+                                <article class="aas-service">
+                                        <h3>Game Promo Art</h3>
+                                        <p>Key visuals, launch graphics, banners and promotional artwork for games.</p>
+                                        <a href="#aas-contact">Start a project ›</a></article>
+                        </div>
+                </div>
+        </section>
+        <section class="aas-work aas-section" id="aas-work">
+                <div class="aas-container">
+                        <div class="aas-section-head aas-work-head">
+                                <div>
+                                        <p class="aas-eyebrow">SELECTED WORK</p>
+                                        <h2>Work built for <em>real production.</em></h2>
+                                        <p class="aas-work-intro">A focused selection of game art, 3D assets, UI/UX and visual development created to move projects from idea to production.</p>
+                                </div>
+                                <a class="aas-text-link" href="#aas-contact">Request Quote ›</a></div>
+                        <div class="aas-filters" role="tablist" aria-label="Filter selected work">
+                                <button class="active" data-filter="all" role="tab" aria-selected="true">All</button>
+                                <button data-filter="3d" role="tab" aria-selected="false">3D Art</button>
+                                <button data-filter="game" role="tab" aria-selected="false">Game Art</button>
+                                <button data-filter="2d" role="tab" aria-selected="false">2D / Illustration</button>
+                                <button data-filter="ui" role="tab" aria-selected="false">UI/UX</button>
+                        </div>
+                        <div class="aas-portfolio">
+                                <article class="aas-project" data-type="game"> <a href="../kangaroo-khaos.html" aria-label="View Kangaroo Khaos case study">
+                                        <div class="aas-project-img aas-kangaroo"> <img src="../images/kangaroo_khaos/Kangaroo_1280X900.jpg" alt="Kangaroo Khaos 3D endless runner character and game art"> <span>3D GAME ART</span></div>
+                                        <div class="aas-project-info">
+                                                <div>
+                                                        <h3>Kangaroo Khaos</h3>
+                                                        <p>Concept Art • 3D Modeling • Rigging • Animation</p>
+                                                </div>
+                                                <span class="aas-project-case-link">View Case Study <b>›</b></span></div>
+                                </a></article>
+                                <article class="aas-project" data-type="3d"> <a href="../jack-the-miner.html" aria-label="View Jack the Miner case study">
+                                        <div class="aas-project-img"> <img src="../images/Jack_The_Miner/Jack_the_Miner_1280X900.jpg" alt="Jack the Miner 3D game character and production assets"> <span>3D GAME ASSETS</span></div>
+                                        <div class="aas-project-info">
+                                                <div>
+                                                        <h3>Jack the Miner</h3>
+                                                        <p>Character Design • 3D Modeling • Props • PBR Texturing</p>
+                                                </div>
+                                                <span class="aas-project-case-link">View Case Study <b>›</b></span></div>
+                                </a></article>
+                                <article class="aas-project" data-type="game"> <a href="../squishy-sauras.html" aria-label="View Squishy Sauras case study">
+                                        <div class="aas-project-img"> <img src="../images/Squishy_Saurus/Squishy_1280X900.jpg" alt="Squishy Sauras 3D AR character and interface design"> <span>3D • AR • UI/UX</span></div>
+                                        <div class="aas-project-info">
+                                                <div>
+                                                        <h3>Squishy Sauras</h3>
+                                                        <p>3D Character • Animation • AR • UI/UX</p>
+                                                </div>
+                                                <span class="aas-project-case-link">View Case Study <b>›</b></span></div>
+                                </a></article>
+                                <article class="aas-project" data-type="ui"> <a href="../shoot-them-all.html" aria-label="View Shoot Them All case study">
+                                        <div class="aas-project-img"> <img src="../images/Shoot_Them_All/Shoot_them_all_1280X900.jpg" alt="Shoot Them All mobile game UI and HUD design"> <span>GAME UI/UX</span></div>
+                                        <div class="aas-project-info">
+                                                <div>
+                                                        <h3>Shoot Them All</h3>
+                                                        <p>Mobile Game • UI/UX • HUD • Interaction</p>
+                                                </div>
+                                                <span class="aas-project-case-link">View Case Study <b>›</b></span></div>
+                                </a></article>
+                                <article class="aas-project" data-type="ui"> <a href="../midnight-runner.html" aria-label="View Midnight Runner case study">
+                                        <div class="aas-project-img"> <img src="../images/Midnight_Runner/Midnight_Runner_1280X900.jpg" alt="Midnight Runner mobile game interface and visual development"> <span>MOBILE RUNNER</span></div>
+                                        <div class="aas-project-info">
+                                                <div>
+                                                        <h3>Midnight Runner</h3>
+                                                        <p>UI/UX • Concept Art • Storyboarding • Visual Development</p>
+                                                </div>
+                                                <span class="aas-project-case-link">View Case Study <b>›</b></span></div>
+                                </a></article>
+                                <article class="aas-project" data-type="2d"> <a href="../game-promo-art.html" aria-label="View Game Promo Art case study">
+                                        <div class="aas-project-img"> <img src="../images/Game_Promo_Art/Wave_Thumb_1280X900.jpg" alt="Game promotional key visual and illustration"> <span>GAME PROMO ART</span></div>
+                                        <div class="aas-project-info">
+                                                <div>
+                                                        <h3>Game Promo Art</h3>
+                                                        <p>Key Visuals • Game Marketing • Illustration • Promotional Art</p>
+                                                </div>
+                                                <span class="aas-project-case-link">View Case Study <b>›</b></span></div>
+                                </a></article>
+                        </div>
+                        <div class="aas-portfolio-cta">
+                                <div> <strong>Looking for something specific?</strong>
+                                        <p>Explore more characters, environments, illustrations, UI/UX and game assets in the full portfolio.</p>
+                                </div>
+                                <a class="aas-btn aas-secondary" href="https://www.archerartstudio.com/portfolio.html" target="_parent" rel="noopener">View Full Portfolio ›</a></div>
+                </div>
+        </section>
+        <section class="aas-about-proof aas-section" id="aas-about">
+                <div class="aas-container aas-about-proof-grid">
+                        <div>
+                                <p class="aas-eyebrow">ABOUT ARCHER ART STUDIO</p>
+                                <h2>Experience that understands<br>
+                                        <em>the production pipeline.</em></h2>
+                        </div>
+                        <div>
+                                <p><strong>Archer Art Studio</strong> is a flexible art and game production partner with 19+ years of creative experience across 2D, 3D, game UI/UX, character design, animation and interactive experiences.</p>
+                                <p>Whether you need one specialist asset or a team supporting a larger production, we adapt to your workflow, references, deadlines and delivery requirements.</p>
+                                <div class="aas-proof-stats">
+                                        <div><strong>19+</strong><span>Years Experience</span></div>
+                                        <div><strong>2D + 3D</strong><span>Full Art Capability</span></div>
+                                        <div><strong>Unity</strong><span>Development Support</span></div>
+                                        <div><strong>Flexible</strong><span>Project &amp; Long-Term</span></div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <section class="aas-fit aas-section">
+                <div class="aas-container aas-fit-grid">
+                        <div>
+                                <p class="aas-eyebrow">HOW WE CAN WORK TOGETHER</p>
+                                <h2>Built for both <em>one-off projects</em> and long-term production.</h2>
+                        </div>
+                        <div class="aas-fit-cards">
+                                <article><b>Project Support</b>
+                                        <p>Need a character, prop set, illustration or UI package? Bring us a defined brief and we'll deliver focused production support.</p>
+                                </article>
+                                <article><b>Ongoing Art Partner</b>
+                                        <p>Need a dependable external art team? We can support recurring asset production and help extend your internal team.</p>
+                                </article>
+                                <article><b>From Concept to Delivery</b>
+                                        <p>When you need more than a single asset, we can support multiple stages of the visual pipeline.</p>
+                                </article>
+                        </div>
+                </div>
+        </section>
+        <section class="aas-process aas-section" id="aas-process">
+                <div class="aas-container">
+                        <div class="aas-center-head">
+                                <p class="aas-eyebrow">OUR PROCESS</p>
+                                <h2>Simple, transparent, <em>effective.</em></h2>
+                        </div>
+                        <div class="aas-steps">
+                                <div><b>01</b>
+                                        <h3>Discover</h3>
+                                        <p>We understand your goals, references, audience and production needs.</p>
+                                </div>
+                                <div><b>02</b>
+                                        <h3>Concept</h3>
+                                        <p>We explore directions and establish the visual language before production.</p>
+                                </div>
+                                <div><b>03</b>
+                                        <h3>Create</h3>
+                                        <p>Our artists build high-quality assets with attention to detail.</p>
+                                </div>
+                                <div><b>04</b>
+                                        <h3>Refine</h3>
+                                        <p>We review, iterate and polish until the work is ready.</p>
+                                </div>
+                                <div><b>05</b>
+                                        <h3>Deliver</h3>
+                                        <p>Final optimized files are delivered in the formats your pipeline needs.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <section class="aas-partners aas-section" id="aas-partners">
+                <div class="aas-container">
+                        <div class="aas-center-head">
+                                <p class="aas-eyebrow">TRUSTED PARTNERS</p>
+                                <h2>Built alongside <em>trusted teams.</em></h2>
+                                <p class="aas-partners-intro">We work with technology and development teams to extend their creative capabilities with reliable 2D/3D art, game assets, UI/UX and production support.</p>
+                        </div>
+                        <div class="aas-partner-grid"> <a class="aas-partner-card" href="https://niksantech.com/" target="_blank" rel="noopener" aria-label="NikSan Tech">
+                                <div class="aas-partner-logo-wrap"><img src="https://niksantech.com/img/niksan_logo.png" alt="NikSan Tech logo" class="aas-partner-logo niksan-logo"></div>
+                                <span class="aas-partner-link">niksantech.com ↗</span></a> <a class="aas-partner-card" href="https://www.intelivita.com/" target="_blank" rel="noopener" aria-label="Intelivita">
+                                        <div class="aas-partner-logo-wrap"><img src="https://www.intelivita.com/wp-content/uploads/2023/11/logo-intelivita.svg" alt="Intelivita logo" class="aas-partner-logo"></div>
+                                        <span class="aas-partner-link">intelivita.com ↗</span></a> <a class="aas-partner-card" href="https://windstargames.com/" target="_blank" rel="noopener" aria-label="Windstar Games">
+                                                <div class="aas-partner-logo-wrap"><img src="https://windstargames.com/assets/logo/Logo.svg" alt="Windstar Games logo" class="aas-partner-logo"></div>
+                                                <span class="aas-partner-link">windstargames.com ↗</span></a> <a class="aas-partner-card" href="https://www.jcasptechnologies.com/" target="_blank" rel="noopener" aria-label="JCasp Technologies">
+                                                        <div class="aas-partner-logo-wrap"><img src="https://www.jcasptechnologies.com/public/assets/images/JCasp-logo-homepage.svg" alt="JCasp Technologies logo" class="aas-partner-logo"></div>
+                                                        <span class="aas-partner-link">jcasptechnologies.com ↗</span></a></div>
+                </div>
+        </section>
+        <section class="aas-cta aas-inquiry-section" id="aas-contact">
+                <div class="aas-container aas-inquiry-grid">
+                        <div class="aas-inquiry-copy">
+                                <p class="aas-eyebrow">START A PROJECT</p>
+                                <h2>Tell us what<br>
+                                        <em>you're building.</em></h2>
+                                <p>Share a few details about your project and the support you need. Archer Art Studio can help with a focused asset, a complete art pipeline or a larger Unity project.</p>
+                                <div class="aas-inquiry-points"> <span>2D / 3D Art</span><span>Game UI/UX</span><span>Animation</span><span>Unity Development</span><span>Ongoing Production</span></div>
+                                <!--<p class="aas-cta-note">Prefer email? <a href="mailto:contact@archerartstudio.com?subject=Project%20Inquiry%20-%20Archer%20Art%20Studio">contact@archerartstudio.com</a></p>-->
+                        </div>
+                        <form class="aas-project-form" id="aas-projectform" action="../send-inquiry.php" method="POST" novalidate>
+                                <div class="aas-form-row">
+                                        <label>Name *
+                                                <input name="name" required placeholder="Your name">
+                                        </label>
+                                        <label>Company / Studio
+                                                <input name="company" placeholder="Company name">
+                                        </label>
+                                </div>
+                                <div class="aas-form-row">
+                                        <label>Email *
+                                                <input type="email" name="email" required placeholder="you@company.com">
+                                        </label>
+                                        <label>Project Type
+                                                <select name="project">
+                                                        <option value="Game Art">Game Art</option>
+                                                        <option value="3D Modeling &amp; Texturing">3D Modeling &amp; Texturing</option>
+                                                        <option value="Game UI/UX">Game UI/UX</option>
+                                                        <option value="Animation">Animation</option>
+                                                        <option value="Unity Game Development">Unity Game Development</option>
+                                                        <option value="Complete Game Project">Complete Game Project</option>
+                                                        <option value="Other">Other</option>
+                                                </select>
+                                        </label>
+                                </div>
+                                <div class="aas-form-row">
+                                        <label>Timeline
+                                                <select name="timeline">
+                                                        <option value="ASAP">ASAP</option>
+                                                        <option value="Within 1 month">Within 1 month</option>
+                                                        <option value="1–3 months">1–3 months</option>
+                                                        <option value="3+ months">3+ months</option>
+                                                        <option value="Ongoing">Ongoing</option>
+                                                </select>
+                                        </label>
+                                        <label>Budget Range *
+                                                <select name="budget" required>
+                                                        <option value="" selected disabled>Select your budget range</option>
+                                                        <option value="Under $2,500">Under $2,500</option>
+                                                        <option value="$2,500–$5,000">$2,500–$5,000</option>
+                                                        <option value="$5,000–$10,000">$5,000–$10,000</option>
+                                                        <option value="$10,000+">$10,000+</option>
+                                                </select>
+                                        </label>
+                                </div>
+                                <label>Project Brief *
+                                        <textarea name="message" required placeholder="What are you building, what do you need help with, and what is the expected scope?"></textarea>
+                                </label>
+                                <div class="aas-recaptcha" style="margin:18px 0;">
+                                        <div class="g-recaptcha" data-sitekey="6LebD64tAAAAAL8us-EmFW5nvPUXJ9-NaFmK89Ix"></div>
+                                </div>
+                                <button class="aas-btn aas-primary" type="submit">Get Quote ›</button>
+                                <p id="aas-form-status" class="aas-form-status" role="status" aria-live="polite"></p>
+                        </form>
+                </div>
+        </section>
+</main>
+<!-- TemplateEndEditable -->
+<footer class="aas-footer">
+        <div class="aas-container aas-footer-grid">
+    <div class="aas-footer-brand"> <a class="aas-brand aas-logo-image aas-footer-logo" href="../index.html#aas-top" aria-label="Archer Art Studio home"> <img class="aas-logo-light" src="../images/archer-logo-transparent.png" alt="Archer Art Studio"> <img class="aas-logo-dark" src="../images/archer-logo-dark.png" alt="" aria-hidden="true"> </a>
+      <p>2D/3D art, game assets and visual design for ambitious digital projects.</p>
+      <div class="aas-footer-connect" aria-label="Archer Art Studio social links"> <span class="aas-footer-connect-label">Connect</span>
+        <div class="aas-footer-social-links"> <a href="https://www.instagram.com/archerartstudio/" target="_blank" rel="noopener noreferrer" aria-label="Archer Art Studio on Instagram"> <img src="https://archerartstudio.com/images/Social_Media_Icon/instagram_icon.png" alt="" aria-hidden="true"> <span class="aas-social-name">Instagram</span> </a> <a href="https://www.facebook.com/archerartstudio" target="_blank" rel="noopener noreferrer" aria-label="Archer Art Studio on Facebook"> <img src="https://archerartstudio.com/images/Social_Media_Icon/facebook_icon.png" alt="" aria-hidden="true"> <span class="aas-social-name">Facebook</span> </a> <a href="https://archerartstudio.myportfolio.com/" target="_blank" rel="noopener noreferrer" aria-label="Archer Art Studio Portfolio"> <img src="https://archerartstudio.com/images/Social_Media_Icon/portfolio_icon.png" alt="" aria-hidden="true"> <span class="aas-social-name">Portfolio</span> </a> </div>
+      </div>
+    </div>
+    <div class="aas-footer-column">
+      <h4>Explore</h4>
+      <a href="#aas-about">About</a> <a href="#aas-services">Services</a> <a href="#aas-work">Portfolio</a> <a href="#aas-process">Process</a> <a href="#aas-partners">Partners</a> </div>
+    <div class="aas-footer-column">
+      <h4>Services</h4>
+      <a href="#aas-services">2D &amp; Concept Art</a> <a href="#aas-services">3D Art</a> <a href="#aas-services">Game Art</a> <a href="#aas-services">UI/UX</a> </div>
+    <div class="aas-footer-column">
+      <h4>Contact</h4>
+      <a href="mailto:contact@archerartstudio.com">contact@archerartstudio.com</a> <a href="https://archerartstudio.com/">archerartstudio.com</a> <span>Ahmedabad, India • Worldwide</span> </div>
+  </div>
+  <div class="aas-container aas-copyright"><span>© 2026 Archer Art Studio. All rights reserved.</span><span>Privacy • Terms</span></div>
+</footer>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("aas-projectform");
+  const status = document.getElementById("aas-form-status");
+  if (!form) return;
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    if (typeof grecaptcha === "undefined" || !grecaptcha.getResponse()) {
+      status.textContent = "Please complete the reCAPTCHA verification.";
+      status.className = "aas-form-status error";
+      return;
+    }
+
+    const button = form.querySelector('button[type="submit"]');
+    const originalText = button.textContent;
+    button.disabled = true;
+    button.textContent = "Sending…";
+    status.textContent = "";
+    status.className = "aas-form-status";
+
+    try {
+      const response = await fetch("send-inquiry-final.php", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+      });
+
+      const text = await response.text();
+          console.log(response);
+      let result;
+      try {
+        result = JSON.parse(text);
+      } catch (e) {
+          console.log(e);
+        throw new Error("The server returned an invalid response. Please try again.");
+      }
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Unable to send your inquiry.");
+      }
+
+      status.textContent =
+        "Thank you! Your inquiry has been sent successfully. We’ll get back to you shortly.";
+      status.className = "aas-form-status success";
+      form.reset();
+
+      if (typeof grecaptcha !== "undefined") {
+        grecaptcha.reset();
+      }
+    } catch (error) {
+      status.textContent =
+        error.message || "Something went wrong. Please try again.";
+      status.className = "aas-form-status error";
+
+      if (typeof grecaptcha !== "undefined") {
+        grecaptcha.reset();
+      }
+    } finally {
+      button.disabled = false;
+      button.textContent = originalText;
+    }
+  });
+});
+</script> 
+<script src="../scripts/script.js"></script>
+<div class="aas-style-toggle" id="aas-styletoggle" aria-label="Light and dark mode"> <span class="aas-style-toggle-label aas-light-label">Dark</span>
+  <button type="button" class="aas-style-toggle-switch" aria-pressed="false" aria-label="Switch to dark mode"> <span class="aas-style-toggle-knob"></span> </button>
+  <span class="aas-style-toggle-label aas-dark-label">Light</span> </div>
+<script src="../scripts/dark-mode.js"></script> 
+<script src="../scripts/premium-parallax.js"></script>
+</body>
+</html>

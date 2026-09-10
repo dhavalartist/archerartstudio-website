@@ -1,0 +1,1484 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =========================================================
+   ARCHER ART STUDIO — SERVICE PAGES
+   ========================================================= */
+.aas-service-page {
+    background: #fff;
+    color: #101820;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.aas-service-hero {
+    padding: 105px 0 90px;
+    background: #fff;
+}
+
+.aas-service-hero-inner {
+    max-width: 950px;
+}
+
+.aas-service-hero h1 {
+    max-width: 950px;
+    margin: 16px 0 25px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.06;
+    font-weight: 800;
+    letter-spacing: -.045em;
+}
+
+.aas-service-hero-copy {
+    max-width: 800px;
+    margin: 0 0 32px;
+    color: var(--muted);
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.aas-service-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.aas-service-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.aas-service-section-alt {
+    background: #f5f7f9;
+}
+
+.aas-section-heading {
+    max-width: 780px;
+    margin-bottom: 55px;
+}
+
+.aas-section-heading h2 {
+    margin: 12px 0 18px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.aas-section-heading > p:last-child {
+    max-width: 720px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+   ========================================================= */
+
+.aas-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.aas-service-card {
+    min-width: 0;
+    padding: 32px;
+    border: 1px solid #e1e6eb;
+    border-radius: 14px;
+    background: #fff;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+.aas-service-card:hover {
+    transform: translateY(-4px);
+    border-color: #d5dce4;
+    box-shadow: 0 14px 35px rgba(20, 30, 45, .08);
+}
+
+.aas-service-card h3 {
+    margin: 0 0 14px;
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.aas-service-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   WHY ARCHER
+   ========================================================= */
+
+.aas-service-two-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 80px;
+    align-items: start;
+}
+
+.aas-service-two-column h2 {
+    margin: 12px 0 0;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.aas-service-two-column > div:last-child p {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.aas-service-points {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 65px;
+}
+
+.aas-service-points > div {
+    padding-top: 22px;
+    border-top: 2px solid var(--teal);
+}
+
+.aas-service-points strong {
+    display: block;
+    margin-bottom: 9px;
+    font-family: Manrope, sans-serif;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+.aas-service-points span {
+    display: block;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.aas-process-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.aas-process-step {
+    min-width: 0;
+    padding: 26px 20px;
+    border-top: 1px solid var(--line);
+}
+
+.aas-process-step > span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--teal);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: .15em;
+}
+
+.aas-process-step h3 {
+    margin: 0 0 12px;
+    font-family: Manrope, sans-serif;
+    font-size: 19px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.aas-process-step p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SELECTED WORK
+   ========================================================= */
+
+.aas-service-work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.aas-service-work-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e1e6eb;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.aas-service-work-card > a:first-child {
+    display: block;
+    overflow: hidden;
+}
+
+.aas-service-work-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.aas-service-work-card:hover img {
+    transform: scale(1.03);
+}
+
+.aas-service-work-card > div {
+    padding: 26px;
+}
+
+.aas-service-work-card h3 {
+    margin: 8px 0 10px;
+    font-family: Manrope, sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.aas-service-work-card > div > p:not(.aas-eyebrow) {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.aas-service-work-card > div > a {
+    color: var(--teal);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.aas-service-centered-link {
+    margin-top: 45px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   WHO WE WORK WITH
+   ========================================================= */
+
+.aas-service-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 30px;
+    margin: 28px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aas-service-list li {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.aas-faq {
+    max-width: 900px;
+}
+
+.aas-faq details {
+    border-top: 1px solid var(--line);
+}
+
+.aas-faq details:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.aas-faq summary {
+    position: relative;
+    padding: 24px 50px 24px 0;
+    cursor: pointer;
+    list-style: none;
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.aas-faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.aas-faq summary::after {
+    content: "+";
+    position: absolute;
+    right: 5px;
+    top: 19px;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.aas-faq details[open] summary::after {
+    content: "−";
+}
+
+.aas-faq details p {
+    max-width: 800px;
+    margin: -3px 0 24px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.aas-service-cta {
+    padding: 105px 0;
+    background: #101820;
+    color: #fff;
+    text-align: center;
+}
+
+.aas-service-cta .aas-container {
+    max-width: 900px;
+}
+
+.aas-service-cta .aas-eyebrow {
+    color: #6f8cff;
+}
+
+.aas-service-cta h2 {
+    margin: 14px 0 20px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.aas-service-cta > .aas-container > p:not(.aas-eyebrow) {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #c7ced7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.aas-service-page .aas-logo-image .aas-logo-light {
+    display: block !important;
+}
+
+.aas-service-page .aas-logo-image .aas-logo-dark {
+    display: none !important;
+}
+
+.aas-service-page .aas-logo-image img {
+    display: block;
+    width: 190px;
+    height: auto;
+    max-height: 54px;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+.dark-mode.aas-service-page,
+.aas-service-page.dark-mode {
+    background: #0d1215 !important;
+    color: #f2f5f5 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-hero,
+.aas-service-page.dark-mode .aas-service-hero {
+    background: #0d1215 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-section,
+.aas-service-page.dark-mode .aas-service-section {
+    background: #0d1215 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-section-alt,
+.aas-service-page.dark-mode .aas-service-section-alt {
+    background: #11191d !important;
+}
+
+.dark-mode.aas-service-page .aas-service-hero h1,
+.dark-mode.aas-service-page .aas-section-heading h2,
+.dark-mode.aas-service-page .aas-service-two-column h2,
+.dark-mode.aas-service-page .aas-service-card h3,
+.dark-mode.aas-service-page .aas-service-work-card h3,
+.dark-mode.aas-service-page .aas-process-step h3,
+.aas-service-page.dark-mode .aas-service-hero h1,
+.aas-service-page.dark-mode .aas-section-heading h2,
+.aas-service-page.dark-mode .aas-service-two-column h2,
+.aas-service-page.dark-mode .aas-service-card h3,
+.aas-service-page.dark-mode .aas-service-work-card h3,
+.aas-service-page.dark-mode .aas-process-step h3 {
+    color: #f2f5f5 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-hero-copy,
+.dark-mode.aas-service-page .aas-section-heading > p:last-child,
+.dark-mode.aas-service-page .aas-service-card p,
+.dark-mode.aas-service-page .aas-service-two-column p,
+.dark-mode.aas-service-page .aas-service-points span,
+.dark-mode.aas-service-page .aas-process-step p,
+.dark-mode.aas-service-page .aas-service-work-card p,
+.dark-mode.aas-service-page .aas-service-list li,
+.dark-mode.aas-service-page .aas-faq details p,
+.aas-service-page.dark-mode .aas-service-hero-copy,
+.aas-service-page.dark-mode .aas-section-heading > p:last-child,
+.aas-service-page.dark-mode .aas-service-card p,
+.aas-service-page.dark-mode .aas-service-two-column p,
+.aas-service-page.dark-mode .aas-service-points span,
+.aas-service-page.dark-mode .aas-process-step p,
+.aas-service-page.dark-mode .aas-service-work-card p,
+.aas-service-page.dark-mode .aas-service-list li,
+.aas-service-page.dark-mode .aas-faq details p {
+    color: #aeb9bd !important;
+}
+
+.dark-mode.aas-service-page .aas-service-card,
+.dark-mode.aas-service-page .aas-service-work-card,
+.aas-service-page.dark-mode .aas-service-card,
+.aas-service-page.dark-mode .aas-service-work-card {
+    background: #151d21 !important;
+    border-color: #2d3a40 !important;
+}
+
+.dark-mode.aas-service-page .aas-process-step,
+.dark-mode.aas-service-page .aas-service-list li,
+.dark-mode.aas-service-page .aas-faq details,
+.aas-service-page.dark-mode .aas-process-step,
+.aas-service-page.dark-mode .aas-service-list li,
+.aas-service-page.dark-mode .aas-faq details {
+    border-color: #2d3a40 !important;
+}
+
+.dark-mode.aas-service-page .aas-service-points > div,
+.aas-service-page.dark-mode .aas-service-points > div {
+    border-top-color: #6f8cff;
+}
+
+.dark-mode.aas-service-page .aas-service-work-card > div > a,
+.aas-service-page.dark-mode .aas-service-work-card > div > a {
+    color: #6f8cff;
+}
+
+.dark-mode.aas-service-page .aas-service-page .aas-logo-image .aas-logo-light,
+.dark-mode.aas-service-page .aas-logo-image .aas-logo-light,
+.aas-service-page.dark-mode .aas-logo-image .aas-logo-light {
+    display: none !important;
+}
+
+.dark-mode.aas-service-page .aas-logo-image .aas-logo-dark,
+.aas-service-page.dark-mode .aas-logo-image .aas-logo-dark {
+    display: block !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .aas-service-hero {
+        padding: 80px 0 70px;
+    }
+
+    .aas-service-grid,
+    .aas-service-work-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .aas-service-two-column {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .aas-service-points {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .aas-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .aas-service-hero {
+        padding: 60px 0 55px;
+    }
+
+    .aas-service-hero h1 {
+        font-size: 42px;
+    }
+
+    .aas-service-hero-copy {
+        font-size: 16px;
+    }
+
+    .aas-service-section {
+        padding: 70px 0;
+    }
+
+    .aas-service-grid,
+    .aas-service-work-grid,
+    .aas-service-points,
+    .aas-process-grid,
+    .aas-service-list {
+        grid-template-columns: 1fr;
+    }
+
+    .aas-section-heading {
+        margin-bottom: 38px;
+    }
+
+    .aas-service-card {
+        padding: 26px;
+    }
+
+    .aas-service-two-column {
+        gap: 25px;
+    }
+
+    .aas-service-list {
+        margin-top: 20px;
+    }
+
+    .aas-service-cta {
+        padding: 75px 0;
+    }
+
+    .aas-service-page .aas-logo-image img {
+        width: 165px;
+    }
+
+}
+/* =========================================================
+   2D GAME ART — HERO SLIDER
+   ========================================================= */
+
+.aas-2d-hero {
+    padding: 95px 0 45px;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.aas-2d-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+    gap: 70px;
+    align-items: start;
+}
+
+.aas-2d-hero-content {
+    max-width: 650px;
+    padding-top: 0;
+}
+
+.aas-2d-hero h1 {
+    max-width: 650px;
+    margin: 16px 0 25px;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(44px, 5vw, 68px);
+    line-height: 1.04;
+    font-weight: 800;
+    letter-spacing: -.045em;
+}
+
+.aas-2d-hero .aas-service-hero-copy {
+    max-width: 600px;
+    margin-bottom: 32px;
+}
+
+.aas-2d-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin-top: 30px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.aas-2d-hero-meta span {
+    position: relative;
+}
+
+.aas-2d-hero-meta span:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #2f5fff;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.aas-2d-create-highlight {
+    color: #2f5fff;
+}
+
+
+/* =========================================================
+   2D SLIDER
+   ========================================================= */
+
+.aas-2d-hero-visual {
+    position: relative;
+    min-width: 0;
+    margin-top: 40px;
+}
+
+.aas-2d-slider {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 12;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #111827;
+    box-shadow: 0 30px 70px rgba(16, 24, 32, .16);
+}
+
+.aas-2d-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .7s ease;
+}
+
+.aas-2d-slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.aas-2d-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================================
+   SLIDER ARROWS
+   ========================================================= */
+
+.aas-2d-slider-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 50%;
+    background: rgba(10,18,30,.68);
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition:
+        opacity .25s ease,
+        background .25s ease,
+        transform .25s ease;
+}
+
+.aas-2d-slider-prev {
+    left: 18px;
+}
+
+.aas-2d-slider-next {
+    right: 18px;
+}
+
+.aas-2d-slider:hover .aas-2d-slider-arrow {
+    opacity: 1;
+}
+
+.aas-2d-slider-arrow:hover {
+    background: #2f5fff;
+    transform: translateY(-50%) scale(1.05);
+}
+
+
+/* =========================================================
+   SLIDER DOTS
+   ========================================================= */
+
+.aas-2d-slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+}
+
+.aas-2d-slider-dots button {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #c8ced6;
+    cursor: pointer;
+    transition:
+        width .25s ease,
+        background .25s ease;
+}
+
+.aas-2d-slider-dots button.is-active {
+    width: 24px;
+    border-radius: 10px;
+    background: #2f5fff;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+.dark-mode.aas-service-page .aas-2d-hero,
+.aas-service-page.dark-mode .aas-2d-hero {
+    background: #0d141b;
+    border-bottom-color: #27323c;
+}
+
+.dark-mode.aas-service-page .aas-2d-slider,
+.aas-service-page.dark-mode .aas-2d-slider {
+    box-shadow: 0 30px 70px rgba(0,0,0,.35);
+}
+
+.dark-mode.aas-service-page .aas-2d-slider-dots button,
+.aas-service-page.dark-mode .aas-2d-slider-dots button {
+    background: #4a5560;
+}
+
+.dark-mode.aas-service-page .aas-2d-slider-dots button.is-active,
+.aas-service-page.dark-mode .aas-2d-slider-dots button.is-active {
+    background: #6f8cff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .aas-2d-hero {
+        padding: 80px 0 55px;
+    }
+
+    .aas-2d-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .aas-2d-hero-content {
+        max-width: 800px;
+    }
+
+    .aas-2d-hero h1 {
+        max-width: 800px;
+    }
+
+    .aas-2d-hero .aas-service-hero-copy {
+        max-width: 700px;
+    }
+
+    .aas-2d-hero-visual {
+        margin-top: 0;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .aas-2d-hero {
+        padding: 60px 0 40px;
+    }
+
+    .aas-2d-hero-grid {
+        gap: 35px;
+    }
+
+    .aas-2d-hero h1 {
+        font-size: 42px;
+    }
+
+    .aas-2d-hero-meta {
+        gap: 9px 20px;
+        line-height: 1.5;
+    }
+
+    .aas-2d-hero-meta span:not(:last-child)::after {
+        right: -12px;
+    }
+
+    .aas-2d-slider {
+        border-radius: 18px;
+    }
+
+    .aas-2d-slider-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 26px;
+        line-height: 30px;
+        opacity: 1;
+    }
+
+    .aas-2d-slider-prev {
+        left: 12px;
+    }
+
+    .aas-2d-slider-next {
+        right: 12px;
+    }
+    
+  
+}
+
+  .aas-2d-hero-highlight {
+    color: #2f5fff;
+}
+/* =========================================================
+   2D GAME ART — WHAT WE CREATE
+   ========================================================= */
+
+.aas-2d-create-section {
+    padding-top: 70px;
+    padding-bottom: 115px;
+}
+
+.aas-2d-create-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.aas-2d-create-heading h2 {
+    max-width: 700px;
+}
+
+.aas-2d-create-heading p {
+    max-width: 680px;
+}
+
+
+/* GRID */
+
+.aas-2d-create-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+
+/* CARD */
+
+.aas-2d-create-card {
+    overflow: hidden;
+    border: 1px solid #e3e7ec;
+    border-radius: 20px;
+    background: #fff;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.aas-2d-create-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(47,95,255,.28);
+    box-shadow: 0 22px 50px rgba(16,24,32,.12);
+}
+
+
+/* IMAGE */
+
+.aas-2d-create-image {
+    position: relative;
+    height: 245px;
+    overflow: hidden;
+    background: #111827;
+}
+
+.aas-2d-create-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .5s ease;
+}
+
+.aas-2d-create-card:hover .aas-2d-create-image img {
+    transform: scale(1.045);
+}
+
+
+/* CONTENT */
+
+.aas-2d-create-content {
+    position: relative;
+    padding: 25px 25px 28px;
+}
+
+.aas-2d-create-number {
+    display: block;
+    margin-bottom: 10px;
+    color: #2f5fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.aas-2d-create-content h3 {
+    margin: 0 0 10px;
+    font-family: Manrope, sans-serif;
+    font-size: 21px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.aas-2d-create-content p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* DARK MODE */
+
+.dark-mode.aas-service-page .aas-2d-create-card,
+.aas-service-page.dark-mode .aas-2d-create-card {
+    border-color: #27323c;
+    background: #131b22;
+}
+
+.dark-mode.aas-service-page .aas-2d-create-card:hover,
+.aas-service-page.dark-mode .aas-2d-create-card:hover {
+    border-color: rgba(111,140,255,.45);
+    box-shadow: 0 22px 50px rgba(0,0,0,.3);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .aas-2d-create-section {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+
+    .aas-2d-create-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .aas-2d-create-section {
+        padding-top: 55px;
+        padding-bottom: 75px;
+    }
+
+    .aas-2d-create-heading {
+        margin-bottom: 35px;
+    }
+
+    .aas-2d-create-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .aas-2d-create-image {
+        height: 220px;
+    }
+
+    .aas-2d-create-content {
+        padding: 21px 21px 24px;
+    }
+
+}
+
+/* =========================================================
+   2D PROCESS — VISUAL WORKFLOW
+   ========================================================= */
+
+.aas-2d-process-section {
+    padding-top: 85px;
+    padding-bottom: 115px;
+    
+}
+
+.aas-2d-process-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.aas-2d-process-heading h2 {
+    max-width: 760px;
+}
+
+.aas-2d-process-heading p {
+    max-width: 700px;
+}
+
+
+/* FLOW */
+
+.aas-2d-process-flow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 52px minmax(0, 1fr) 52px minmax(0, 1fr);
+    align-items: stretch;
+    gap: 0;
+}
+
+
+/* CARDS */
+
+.aas-2d-process-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #27323c;
+    border-radius: 20px;
+    background: #131b22;
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.aas-2d-process-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(47, 95, 255, .5);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .25);
+}
+
+
+/* IMAGE — SAME HEIGHT, NO CROPPING */
+
+.aas-2d-process-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #ffffff;
+    line-height: 0;
+}
+
+.aas-2d-process-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aas-2d-process-card:hover .aas-2d-process-image img {
+    transform: scale(1.015);
+}
+
+
+/* CONTENT — SAME HEIGHT */
+
+.aas-2d-process-content {
+    flex: 1;
+    min-height: 176px;
+    padding: 24px 25px 28px;
+    box-sizing: border-box;
+    
+}
+
+.aas-2d-process-number {
+    display: block;
+    margin-bottom: 10px;
+    color: #2f5fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.aas-2d-process-content h3 {
+    margin: 0 0 10px;
+    font-family: Manrope, sans-serif;
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.aas-2d-process-content p {
+    margin: 0;
+    color: #c3ccd5;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* CONNECTOR ARROWS — LARGE MINIMAL CHEVRON */
+
+.aas-2d-process-arrow {
+    position: relative;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.aas-2d-process-arrow::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #2f5fff;
+    border-right: 3px solid #2f5fff;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.aas-2d-process-arrow span {
+    display: none;
+}
+
+
+/* LIGHT MODE */
+
+.aas-service-page:not(.dark-mode) .aas-2d-process-card {
+    border-color: #dce2e8;
+    background: #f3f5f7;
+}
+
+.aas-service-page:not(.dark-mode) .aas-2d-process-content p {
+    color: #5c6672;
+}
+
+
+/* DARK MODE */
+
+.dark-mode.aas-service-page .aas-2d-process-card,
+.aas-service-page.dark-mode .aas-2d-process-card {
+    border-color: #27323c;
+    background: #131b22;
+}
+
+.dark-mode.aas-service-page .aas-2d-process-card:hover,
+.aas-service-page.dark-mode .aas-2d-process-card:hover {
+    border-color: rgba(111, 140, 255, .45);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, .3);
+}
+
+.dark-mode.aas-service-page .aas-2d-process-image,
+.aas-service-page.dark-mode .aas-2d-process-image {
+    background: #ffffff;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+
+    .aas-2d-process-flow {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .aas-2d-process-arrow {
+        width: 40px;
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .aas-2d-process-arrow::after {
+        left: 50%;
+        top: 8px;
+        transform: translateX(-50%) rotate(135deg);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .aas-2d-process-section {
+        padding-top: 60px;
+        padding-bottom: 75px;
+    }
+
+    .aas-2d-process-heading {
+        margin-bottom: 35px;
+    }
+
+    .aas-2d-process-image {
+        height: 190px;
+    }
+
+    .aas-2d-process-content {
+        min-height: 0;
+        padding: 21px 21px 24px;
+    }
+
+    .aas-2d-process-content h3 {
+        font-size: 20px;
+    }
+
+    .aas-2d-process-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .aas-2d-process-arrow::after {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* =========================================================
+   2D GAME ART — SELECTED WORK
+   ========================================================= */
+
+.aas-2d-selected-section {
+    padding-top: 95px;
+    padding-bottom: 110px;
+}
+
+.aas-2d-selected-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+
+/* GRID */
+
+.aas-2d-selected-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+
+/* CARD */
+
+.aas-2d-selected-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #dfe4e9;
+    border-radius: 20px;
+    background: #fff;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.aas-2d-selected-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(47, 95, 255, .3);
+    box-shadow: 0 22px 50px rgba(16, 24, 32, .12);
+}
+
+
+/* IMAGE */
+
+.aas-2d-selected-image {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: #111827;
+}
+
+.aas-2d-selected-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .5s ease;
+}
+
+.aas-2d-selected-card:hover .aas-2d-selected-image img {
+    transform: scale(1.035);
+}
+
+
+/* CONTENT */
+
+.aas-2d-selected-content {
+    padding: 25px 25px 28px;
+}
+
+.aas-2d-selected-content h3 {
+    margin: 8px 0 10px;
+    font-family: Manrope, sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.aas-2d-selected-content > p:not(.aas-eyebrow) {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.aas-2d-selected-content > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #2f5fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.aas-2d-selected-content > a span {
+    transition: transform .25s ease;
+}
+
+.aas-2d-selected-content > a:hover span {
+    transform: translateX(4px);
+}
+
+
+/* LIGHT MODE */
+
+.aas-service-page:not(.dark-mode) .aas-2d-selected-card {
+    border-color: #dfe4e9;
+    background: #fff;
+}
+
+
+/* DARK MODE */
+
+.dark-mode.aas-service-page .aas-2d-selected-card,
+.aas-service-page.dark-mode .aas-2d-selected-card {
+    border-color: #2d3a40;
+    background: #151d21;
+}
+
+.dark-mode.aas-service-page .aas-2d-selected-card:hover,
+.aas-service-page.dark-mode .aas-2d-selected-card:hover {
+    border-color: rgba(111, 140, 255, .45);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, .3);
+}
+
+.dark-mode.aas-service-page .aas-2d-selected-content > a,
+.aas-service-page.dark-mode .aas-2d-selected-content > a {
+    color: #6f8cff;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .aas-2d-selected-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .aas-2d-selected-section {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .aas-2d-selected-heading {
+        margin-bottom: 38px;
+    }
+
+    .aas-2d-selected-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .aas-2d-selected-content {
+        padding: 21px 21px 24px;
+    }
+}
+
