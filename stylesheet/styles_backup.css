@@ -79,12 +79,6 @@ a {
   color: #fff;
   border-radius: 6px
 }
-
-.aas-menu .aas-nav-cta:hover {
-  color: #fff;
-  background: var(--teal2);
-}
-
 .aas-menu-toggle {
   display: none;
   border: 0;
@@ -3466,6 +3460,17 @@ body.dark-mode .aas-portfolio .aas-project p {
 }
 
 @media (max-width: 600px) {
+  .aas-portfolio .aas-project-img {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 1280 / 900 !important;
+  }
+
+  .aas-portfolio .aas-project-img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
 }
 
 /* Contact form success/error messages */
@@ -4635,5 +4640,14 @@ body.dark-mode .aas-portfolio .aas-project p {
     background: transparent !important;
     border: 0 !important;
     box-shadow: none !important;
+  }
+
+  .dark-mode .aas-dropdown-menu a {
+    color: #F4F6F8 !important;
+  }
+
+  .dark-mode .aas-dropdown-menu a:hover {
+    background: rgba(47, 95, 255, 0.16) !important;
+    color: #7D96FF !important;
   }
 }

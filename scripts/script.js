@@ -75,8 +75,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const previous = slider.querySelector(".aas-2d-slider-prev");
     const next = slider.querySelector(".aas-2d-slider-next");
 
+    if (!slides.length) {
+        return;
+    }
+
     let current = 0;
     let timer;
+
+    let touchStartX = 0;
+    let touchEndX = 0;
 
     function showSlide(index) {
 
@@ -92,36 +99,54 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function startSlider() {
+
+        clearInterval(timer);
+
         timer = setInterval(function () {
             showSlide(current + 1);
         }, 4500);
     }
 
     function resetSlider() {
+
         clearInterval(timer);
         startSlider();
     }
 
-    if (next) {
-        next.addEventListener("click", function () {
-            showSlide(current + 1);
-            resetSlider();
-        });
-    }
+    /* Previous button */
 
     if (previous) {
+
         previous.addEventListener("click", function () {
             showSlide(current - 1);
             resetSlider();
         });
+
     }
 
+    /* Next button */
+
+    if (next) {
+
+        next.addEventListener("click", function () {
+            showSlide(current + 1);
+            resetSlider();
+        });
+
+    }
+
+    /* Dots */
+
     dots.forEach(function (dot, index) {
+
         dot.addEventListener("click", function () {
             showSlide(index);
             resetSlider();
         });
+
     });
+
+    /* Desktop hover pause */
 
     slider.addEventListener("mouseenter", function () {
         clearInterval(timer);
@@ -130,6 +155,55 @@ document.addEventListener("DOMContentLoaded", function () {
     slider.addEventListener("mouseleave", function () {
         startSlider();
     });
+
+    /* =====================================================
+       MOBILE SWIPE
+       ===================================================== */
+
+    slider.addEventListener("touchstart", function (event) {
+
+        touchStartX = event.changedTouches[0].screenX;
+        touchEndX = touchStartX;
+
+        clearInterval(timer);
+
+    }, { passive: true });
+
+
+    slider.addEventListener("touchmove", function (event) {
+
+        touchEndX = event.changedTouches[0].screenX;
+
+    }, { passive: true });
+
+
+    slider.addEventListener("touchend", function () {
+
+        const swipeDistance = touchEndX - touchStartX;
+        const minimumSwipeDistance = 50;
+
+        if (Math.abs(swipeDistance) >= minimumSwipeDistance) {
+
+            if (swipeDistance < 0) {
+
+                /* Swipe left → next */
+                showSlide(current + 1);
+
+            } else {
+
+                /* Swipe right → previous */
+                showSlide(current - 1);
+
+            }
+
+        }
+
+        resetSlider();
+
+    }, { passive: true });
+
+
+    /* Start slider */
 
     showSlide(0);
     startSlider();
