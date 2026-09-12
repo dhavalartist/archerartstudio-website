@@ -209,3 +209,122 @@ document.addEventListener("DOMContentLoaded", function () {
     startSlider();
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const processSteps = document.querySelectorAll(
+        ".aas-3d-process-step"
+    );
+
+    const processImage = document.querySelector(
+        "#aas-process-image"
+    );
+
+    if (!processSteps.length || !processImage) {
+        return;
+    }
+
+    const processImages = [
+        {
+            src: "images/3d_game_art_page/Process/Concept.jpg",
+            alt: "3D game art concept development by Archer Art Studio"
+        },
+        {
+            src: "images/3d_game_art_page/Process/3D_Modeling.jpg",
+            alt: "3D game asset modeling by Archer Art Studio"
+        },
+        {
+            src: "images/3d_game_art_page/Process/3D_Texturing.jpg",
+            alt: "3D game asset texturing by Archer Art Studio"
+        },
+        {
+            src: "images/3d_game_art_page/Process/3D_Rigging.jpg",
+            alt: "3D character rigging by Archer Art Studio"
+        },
+        {
+            src: "images/3d_game_art_page/Process/3D_Animation.jpg",
+            alt: "3D character animation by Archer Art Studio"
+        }
+    ];
+
+    let activeIndex = 0;
+    let processTimer;
+    let isPaused = false;
+
+    function activateStep(index) {
+        activeIndex = index;
+
+        processSteps.forEach(function (step, stepIndex) {
+            const button = step.querySelector(
+                ".aas-3d-process-step-title"
+            );
+
+            const content = step.querySelector(
+                ".aas-3d-process-step-content"
+            );
+
+            const isActive = stepIndex === index;
+
+            step.classList.toggle("is-active", isActive);
+            button.setAttribute("aria-expanded", String(isActive));
+            content.hidden = !isActive;
+        });
+
+        processImage.style.opacity = "0";
+
+        setTimeout(function () {
+            processImage.src = processImages[index].src;
+            processImage.alt = processImages[index].alt;
+            processImage.style.opacity = "1";
+        }, 180);
+    }
+
+    function startProcessAnimation() {
+        clearInterval(processTimer);
+
+        processTimer = setInterval(function () {
+            if (!isPaused) {
+                const nextIndex =
+                    (activeIndex + 1) % processSteps.length;
+
+                activateStep(nextIndex);
+            }
+        }, 4500);
+    }
+
+    processSteps.forEach(function (step, index) {
+        const button = step.querySelector(
+            ".aas-3d-process-step-title"
+        );
+
+        button.addEventListener("click", function () {
+            activateStep(index);
+            startProcessAnimation();
+        });
+    });
+
+    const processArea = document.querySelector(
+        ".aas-3d-process-section"
+    );
+
+    if (processArea) {
+        processArea.addEventListener("mouseenter", function () {
+            isPaused = true;
+        });
+
+        processArea.addEventListener("mouseleave", function () {
+            isPaused = false;
+        });
+
+        processArea.addEventListener("focusin", function () {
+            isPaused = true;
+        });
+
+        processArea.addEventListener("focusout", function () {
+            isPaused = false;
+        });
+    }
+
+    activateStep(0);
+    startProcessAnimation();
+});
